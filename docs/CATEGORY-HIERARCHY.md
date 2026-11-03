@@ -1,0 +1,5 @@
+# Collection → Category → Products
+
+Collections are top-level public menu entries. Categories have one parent collection and are nested links. Products select one or more categories; a collection listing aggregates its own legacy direct memberships plus its child category memberships without duplicate products. Public routes include only active children of active collections and published eligible products. Existing groups, IDs and memberships are retained. Existing unparented categories are shown in admin for explicit reassignment, not guessed by migration. Existing direct collection/product assignments remain readable for compatibility; the new editor offers categories for new assignments.
+
+An additive nullable self-referencing parent_id column is used with application validation: roots must be collections, categories require a collection parent, self/category parents are rejected, and a collection with children cannot become a category. SQLite backup and row preservation verification precede/follow the development migration. Staff permission, CSRF, version checks, image and publication safeguards remain in force.

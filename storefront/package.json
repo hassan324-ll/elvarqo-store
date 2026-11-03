@@ -1,0 +1,36 @@
+{
+  "name": "elvarqo-storefront",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname localhost --port 3000",
+    "build": "next build",
+    "start": "next start --hostname localhost --port 3000",
+    "lint": "oxlint --deny-warnings",
+    "format": "prettier --write . ../shared/ui ../shared/sync-ui.mjs && npm run sync-ui",
+    "format:check": "prettier --check . ../shared/ui ../shared/sync-ui.mjs",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run build",
+    "sync-ui": "node ../shared/sync-ui.mjs storefront",
+    "predev": "npm run sync-ui",
+    "prebuild": "npm run sync-ui",
+    "precheck": "npm run sync-ui",
+    "preformat": "npm run sync-ui"
+  },
+  "dependencies": {
+    "next": "16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "prettier": "^3.9.10",
+    "typescript": "^5",
+    "oxlint": "^1.89.0"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

@@ -1,0 +1,55 @@
+name: MySQL compatibility
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  database:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - image: mysql:8.4
+            health: mysqladmin ping -h 127.0.0.1 --silent
+          - image: mariadb:11.4
+            health: healthcheck.sh --connect --innodb_initialized
+    services:
+      database:
+        image: ${{ matrix.image }}
+        env:
+          MYSQL_ROOT_PASSWORD: test-only-ci-password
+          MYSQL_DATABASE: elvarqo_test_suite
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd "${{ matrix.health }}"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 12
+    defaults:
+      run:
+        working-directory: backend
+    env:
+      MYSQL_TEST_HOST: 127.0.0.1
+      MYSQL_TEST_PORT: 3306
+      MYSQL_TEST_DATABASE: elvarqo_test_suite
+      MYSQL_TEST_USERNAME: root
+      MYSQL_TEST_PASSWORD: test-only-ci-password
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: gd, pdo_mysql, pdo_sqlite, sqlite3, mbstring, dom, fileinfo
+          tools: composer:v2
+          coverage: none
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: backend/media/package-lock.json
+      - run: npm ci --prefix media
+      - run: composer install --no-interaction --prefer-dist
+      - run: cp .env.example .env
+      - run: php artisan key:generate
+      - run: php vendor/phpunit/phpunit/phpunit -c phpunit.mysql.xml

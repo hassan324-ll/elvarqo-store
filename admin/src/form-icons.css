@@ -1,0 +1,93 @@
+/* Decorative icons keep native labels, keyboard behaviour and validation intact. */
+:is(.admin-workspace, .access-form) {
+  --input-icon-text: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M4%205h16M4%2012h10M4%2019h7%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-search: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22m21%2021-5-5M18%2010a8%208%200%201%201-16%200%208%208%200%200%201%2016%200%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-filter: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M4%206h16M7%2012h10M10%2018h4%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-mail: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%205h18v14H3ZM3%205l9%207%209-7%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-lock: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M5%2010h14v11H5ZM8%2010V6a4%204%200%200%201%208%200v4%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-number: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M9%203%207%2021M17%203l-2%2018M4%208h17M3%2016h17%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-money: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M18%205a5%205%200%200%200-9%203v5c0%203-2%205-4%206h14M5%2012h11%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%203h18v18H3ZM3%2017l5-5%204%204%203-3%206%206M16%207h.01%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-link: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22m10%2013%204-4M8%2016l-1%201a4%204%200%200%201-6-6l4-4a4%204%200%200%201%206%200M16%208l1-1a4%204%200%200%201%206%206l-4%204a4%204%200%200%201-6%200%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-phone: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M7%203H3c0%2010%208%2018%2018%2018v-4l-5-2-2%202a15%2015%200%200%201-7-7l2-2-2-5Z%22%2F%3E%3C%2Fsvg%3E');
+  --input-icon-calendar: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2366735e%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%205h18v16H3ZM3%2010h18M7%203v4M17%203v4%22%2F%3E%3C%2Fsvg%3E');
+}
+:is(.admin-workspace, .access-form)
+  input:not([type='checkbox']):not([type='radio']):not([type='hidden']):not(
+    [type='submit']
+  ),
+:is(.admin-workspace, .access-form) select,
+:is(.admin-workspace, .access-form) textarea {
+  background-image: var(--input-icon-text);
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 18px 18px;
+  padding-left: 40px;
+}
+:is(.admin-workspace, .access-form) select {
+  background-image: var(--input-icon-filter);
+  padding-right: 28px;
+}
+:is(.admin-workspace, .access-form) textarea {
+  background-position: 12px 13px;
+}
+/* Higher specificity keeps icon spacing consistent across existing form styles. */
+:is(.admin-workspace, .access-form)
+  :is(input, select, textarea):not([type='checkbox']):not([type='radio']):not(
+    [type='hidden']
+  ):not([type='submit']) {
+  background-image: var(--field-icon, var(--input-icon-text));
+  background-repeat: no-repeat;
+  background-position: 12px var(--field-icon-y, center);
+  background-size: 18px 18px;
+  padding-left: 40px;
+}
+:is(.admin-workspace, .access-form) select {
+  --field-icon: var(--input-icon-filter);
+}
+:is(.admin-workspace, .access-form) textarea {
+  --field-icon-y: 13px;
+}
+:is(.admin-workspace, .access-form) input[type='search'] {
+  --field-icon: var(--input-icon-search);
+}
+:is(.admin-workspace, .access-form) input[type='email'] {
+  --field-icon: var(--input-icon-mail);
+}
+:is(.admin-workspace, .access-form) input[type='password'] {
+  --field-icon: var(--input-icon-lock);
+}
+:is(.admin-workspace, .access-form) input[type='number'] {
+  --field-icon: var(--input-icon-number);
+}
+:is(.admin-workspace, .access-form) input[inputmode='decimal'] {
+  --field-icon: var(--input-icon-money);
+}
+:is(.admin-workspace, .access-form) input[type='file'] {
+  --field-icon: var(--input-icon-image);
+}
+:is(.admin-workspace, .access-form) input[type='url'] {
+  --field-icon: var(--input-icon-link);
+}
+:is(.admin-workspace, .access-form) input[type='tel'] {
+  --field-icon: var(--input-icon-phone);
+}
+:is(.admin-workspace, .access-form) input[type='date'] {
+  --field-icon: var(--input-icon-calendar);
+}
+:is(.admin-workspace, .access-form) input[inputmode='numeric'] {
+  --field-icon: var(--input-icon-number);
+}
+:is(.admin-workspace, .access-form) textarea:focus-visible {
+  outline: 3px solid #47564040;
+  outline-offset: 2px;
+}
+@media (forced-colors: active) {
+  :is(.admin-workspace, .access-form)
+    :is(input, select, textarea):not([type='checkbox']):not([type='radio']):not(
+      [type='hidden']
+    ):not([type='submit']) {
+    background-image: none;
+    padding-left: 12px;
+  }
+}

@@ -1,0 +1,58 @@
+name: ELVARQO verification
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  react:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [storefront, admin]
+    defaults:
+      run:
+        working-directory: ${{ matrix.app }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: ${{ matrix.app }}/package-lock.json
+      - run: npm ci
+      - run: cp .env.example .env.local
+      - run: npm run check
+  laravel:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: gd, pdo_sqlite, sqlite3, mbstring, dom, fileinfo
+          tools: composer:v2
+          coverage: none
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: backend/media/package-lock.json
+      - run: npm ci --prefix media
+      - run: composer install --no-interaction --prefer-dist
+      - run: cp .env.example .env
+      - run: php artisan key:generate
+      - run: touch database/database.sqlite
+      - run: php artisan migrate --force
+      - run: composer validate --strict
+      - run: composer format:check
+      - run: composer test
+      - run: node shared/tests/commerce-concurrency.cjs
+        working-directory: .
+      - run: node shared/tests/fulfilment-concurrency.cjs
+        working-directory: .
+      - run: php artisan foundation:probe
+      - run: php artisan queue:work --stop-when-empty --tries=1 --timeout=30
+      - run: test -n "$(find storage/app/private/foundation -name '*.txt' -print -quit)"
+      - run: grep -q 'ELVARQO local foundation probe' storage/logs/laravel.log

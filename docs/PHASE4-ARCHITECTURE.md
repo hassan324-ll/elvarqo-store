@@ -1,0 +1,15 @@
+# Phase 4 implementation decisions — 26 October 2026
+
+Reviewed both supplied PDFs: plan Phase 04 pp.11–12, design A09–A14/A20/A31 and S08–S10. This is catalogue/inventory only; storefront shopping integration is Phase 5, reservations/checkout Phase 6, general CSV tooling Phase 10.
+
+Extend the existing staff session, CSRF, permission and audit foundation. Catalogue readers use catalogue.view; every catalogue/media/stock write requires catalogue.manage. No personal accounts, fabricated saleable products or production stock are seeded.
+
+Products have draft/published/archived state, optimistic version checks, plain-text descriptions/material/fit/care and garment measurements in cm, GBP integer minor-unit prices on variants, normalized colour/size options/values, globally reserved SKU/barcodes, collections/categories and ordered memberships. Draft preview uses actual saved server state. Published content must be explicitly unpublished before editing; this avoids silently pushing unreviewed edits live. Publication independently validates completeness and active variants/media/SEO. Public serialization is allowlisted.
+
+All product/variant/media removal is archival. Foreign keys restrict deletion; original files and records are retained for future order snapshots. Old and current slugs share a permanent unique registry. An old slug returns a 301 to the current published canonical API resource; aliases never expose draft/archived content. Phase 6 order items must retain product/variant/media IDs and price/content snapshots; there are no orders in this phase.
+
+Stock uses per-variant/location on_hand and reserved balances, with available=on_hand-reserved. Server transactions lock balances, reject changes below reserved, and record immutable signed movements with reason, actor, reference and resulting quantities. UUID idempotency protects adjustments/transfers from retries. Reserved is not client-writable; Phase 6 supplies reservation lifecycle. Location-to-location transfers are atomic paired movements.
+
+The PHP runtime has no GD/Imagick extension. Use a dedicated Node/Sharp worker under backend/media with its own pinned lockfile. Validate actual decoded raster format, <=8MB, <=24MP, JPEG/PNG/WebP, reject animation/SVG, strip public metadata, retain private original, generate 640/1280/1920 WebP variants without enlargement. Paths/UUIDs are server-generated; process uses argument arrays and a timeout. Both original and derivatives stay private; public image routes authorize current publication and active variant linkage on every request. No external QR/media services or public storage symlink needed. See Sharp output docs and Laravel validation docs for reference.
+
+Use isolated SQLite/storage/accounts for tests and browser checks. Back up existing source/database before mutations. Validate create→four variants→media→preview→publish→public read→stock/history→unpublish, direct permission denials, duplicate/invalid inputs, optimistic conflicts, idempotency, archival and slug redirects. Preserve Phase 1–3 checks. Record exact commands, evidence and limits in docs/PROGRESS.md; no Phase 5 work.

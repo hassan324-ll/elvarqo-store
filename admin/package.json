@@ -1,0 +1,38 @@
+{
+  "name": "elvarqo-admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint --deny-warnings",
+    "preview": "vite preview",
+    "format": "prettier --write . ../shared/ui ../shared/sync-ui.mjs && npm run sync-ui",
+    "format:check": "prettier --check . ../shared/ui ../shared/sync-ui.mjs",
+    "typecheck": "tsc -b",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run build",
+    "sync-ui": "node ../shared/sync-ui.mjs admin",
+    "predev": "npm run sync-ui",
+    "prebuild": "npm run sync-ui",
+    "precheck": "npm run sync-ui",
+    "preformat": "npm run sync-ui"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

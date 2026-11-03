@@ -1,0 +1,31 @@
+.after-sales-case {
+  border-top: 1px solid #ddd;
+  padding: 24px 0;
+  overflow-wrap: anywhere;
+}
+.after-sales-form {
+  display: grid;
+  gap: 12px;
+  max-width: 620px;
+  margin: 24px 0;
+}
+.after-sales-form label {
+  display: grid;
+  gap: 8px;
+}
+.after-sales-form input:not([type='checkbox']),
+.after-sales-form select,
+.after-sales-form textarea {
+  padding: 10px;
+  min-height: 44px;
+  font-size: 16px;
+}
+.after-sales-case button {
+  min-height: 44px;
+  padding: 10px 16px;
+}
+.after-sales-case summary {
+  min-height: 44px;
+  cursor: pointer;
+  padding: 12px 0;
+}

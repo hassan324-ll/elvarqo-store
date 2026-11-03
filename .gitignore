@@ -1,0 +1,33 @@
+**/node_modules/
+**/vendor/
+**/.next/
+**/dist/
+**/.env
+**/.env.*
+!**/.env.example
+**/*.sqlite
+**/*.sqlite-*
+**/*.tsbuildinfo
+**/coverage/
+**/test-results/
+**/playwright-report/
+
+# Optional isolated browser QA dependencies
+/.qa/
+
+# Generated verification captures are retained locally, not published.
+/docs/verification/
+
+# Private credentials, database exports and deployment backups
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+**/auth.json
+**/*.sql
+**/*.sql.gz
+**/*.dump
+**/*.bak
+**/*.zip
+**/*.tar.gz
+**/*.log
