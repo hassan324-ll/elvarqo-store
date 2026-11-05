@@ -1,0 +1,98 @@
+{
+  "checked_utc": "2026-11-05T06:07:32Z",
+  "products": [
+    {
+      "url": "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper",
+      "title": "Women's Textured V-Neck Knitted Jumper",
+      "variants": 25,
+      "initial_html_json_ld": true,
+      "prices_skus_availability_match_api": true,
+      "visible_breadcrumb_match": true,
+      "first_last_variant_urls_preselect": true,
+      "public_image_indexable": true,
+      "canonical": [
+        "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC"
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper",
+      "title": "Women's Crew Neck Knitted Jumper",
+      "variants": 36,
+      "initial_html_json_ld": true,
+      "prices_skus_availability_match_api": true,
+      "visible_breadcrumb_match": true,
+      "first_last_variant_urls_preselect": true,
+      "public_image_indexable": true,
+      "canonical": [
+        "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC"
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-high-neck-knitted-jumper",
+      "title": "Women's High Neck Knitted Jumper",
+      "variants": 20,
+      "initial_html_json_ld": true,
+      "prices_skus_availability_match_api": true,
+      "visible_breadcrumb_match": true,
+      "first_last_variant_urls_preselect": true,
+      "public_image_indexable": true,
+      "canonical": [
+        "https://elvarqo.uk/products/womens-high-neck-knitted-jumper"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC"
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-collared-knitted-jumper",
+      "title": "Women's Collared Knitted Jumper",
+      "variants": 20,
+      "initial_html_json_ld": true,
+      "prices_skus_availability_match_api": true,
+      "visible_breadcrumb_match": true,
+      "first_last_variant_urls_preselect": true,
+      "public_image_indexable": true,
+      "canonical": [
+        "https://elvarqo.uk/products/womens-collared-knitted-jumper"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC"
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-v-neck-knitted-jumper",
+      "title": "Women's V-Neck Knitted Jumper",
+      "variants": 55,
+      "initial_html_json_ld": true,
+      "prices_skus_availability_match_api": true,
+      "visible_breadcrumb_match": true,
+      "first_last_variant_urls_preselect": true,
+      "public_image_indexable": true,
+      "canonical": [
+        "https://elvarqo.uk/products/womens-v-neck-knitted-jumper"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC"
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper",
+      "title": "Women's Roll Neck Knitted Jumper",
+      "variants": 60,
+      "initial_html_json_ld": true,
+      "prices_skus_availability_match_api": true,
+      "visible_breadcrumb_match": true,
+      "first_last_variant_urls_preselect": true,
+      "public_image_indexable": true,
+      "canonical": [
+        "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC"
+    }
+  ],
+  "missing_product_no_schema": true,
+  "private_api_exclusion_preserved": true,
+  "google_rich_results_test": "Separate browser validation; not inferred from this script"
+}

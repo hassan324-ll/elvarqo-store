@@ -66,6 +66,9 @@ class PublicCatalogueController extends Controller
             abort_unless(Variant::where('id', $m->variant_id)->where('active', true)->whereNull('archived_at')->exists(), 404);
         }
 
-        return CatalogueController::file($m, $size);
+        $response = CatalogueController::file($m, $size);
+        $response->headers->set('X-Robots-Tag', 'index, follow');
+
+        return $response;
     }
 }

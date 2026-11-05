@@ -132,6 +132,14 @@ export default function Inventory({ staff }: { staff: StaffIdentity }) {
         </div>
         <Badge key="cell-1">Live records</Badge>
       </header>
+      {rows?.items.some((row) => row.stock_tracked === false) && (
+        <p className="catalogue-notice">
+          Always available: active variants are in stock without quantity
+          counts. You do not need to add stock locations or adjustments.
+          Recorded balances below are retained for reference and do not limit
+          new orders.
+        </p>
+      )}
       <section className="panel">
         <form
           className="catalogue-filters"
@@ -203,20 +211,25 @@ export default function Inventory({ staff }: { staff: StaffIdentity }) {
                   balance.location,
                   balance.on_hand,
                   balance.reserved,
-                  balance.available,
+                  row.stock_tracked === false
+                    ? 'Not counted'
+                    : balance.available,
                   <Badge
                     key="cell-5"
                     tone={
+                      row.stock_tracked === false ||
                       balance.available > row.low_stock_threshold
                         ? 'success'
                         : 'warning'
                     }
                   >
-                    {balance.available === 0
-                      ? 'Out of stock'
-                      : balance.available <= row.low_stock_threshold
-                        ? 'Low stock'
-                        : 'In stock'}
+                    {row.stock_tracked === false
+                      ? 'In stock'
+                      : balance.available === 0
+                        ? 'Out of stock'
+                        : balance.available <= row.low_stock_threshold
+                          ? 'Low stock'
+                          : 'In stock'}
                   </Badge>,
                   <Button
                     key="cell-6"

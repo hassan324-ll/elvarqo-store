@@ -345,6 +345,18 @@ class CatalogueTest extends TestCase
         $this->get('/api/v1/catalogue/media/'.$media.'/640')->assertNotFound();
     }
 
+    public function test_optional_material_fit_and_care_do_not_block_publication(): void
+    {
+        $p = $this->upload($this->create())->assertCreated()->json('data.product');
+        $body = $this->saveBody($p);
+        $body['material'] = null;
+        $body['fit'] = '';
+        $body['care'] = null;
+        $p = $this->api('products/'.$p['id'], $body)->assertOk()->json('data.product');
+        $this->api('products/'.$p['id'].'/publish', ['version' => $p['version']])->assertOk()->assertJsonPath('data.product.status', 'published');
+        $this->assertDatabaseHas('catalogue_products', ['id' => $p['id'], 'material' => null, 'fit' => null, 'care' => null, 'status' => 'published']);
+    }
+
     public function test_incomplete_draft_cannot_publish_and_errors_preserve_records(): void
     {
         $p = $this->create();
@@ -604,14 +616,26 @@ class CatalogueTest extends TestCase
         $this->assertDatabaseCount('stock_movements', 0);
     }
 
-    public function test_every_active_size_needs_verified_measurements_before_publication(): void
+    public function test_missing_measurements_for_some_sizes_do_not_block_publication(): void
     {
         $p = $this->create();
         $p = $this->upload($p)->assertCreated()->json('data.product');
         $body = $this->saveBody($p);
         $body['measurements'] = [$body['measurements'][0]];
         $p = $this->api('products/'.$p['id'], $body)->assertOk()->json('data.product');
-        $this->api('products/'.$p['id'].'/publish', ['version' => $p['version']])->assertUnprocessable()->assertJsonValidationErrors('measurements', 'error.details');
+        $this->api('products/'.$p['id'].'/publish', ['version' => $p['version']])->assertOk()->assertJsonPath('data.product.status', 'published');
+    }
+
+    public function test_empty_measurements_can_publish_but_supplied_invalid_measurements_are_rejected(): void
+    {
+        $p = $this->upload($this->create())->assertCreated()->json('data.product');
+        $body = $this->saveBody($p);
+        $body['measurements'] = [['size' => 'M', 'chest_cm' => -1, 'length_cm' => 0, 'shoulder_cm' => 40]];
+        $this->api('products/'.$p['id'], $body)->assertUnprocessable();
+        $body['measurements'] = [];
+        $p = $this->api('products/'.$p['id'], $body)->assertOk()->json('data.product');
+        $this->api('products/'.$p['id'].'/publish', ['version' => $p['version']])->assertOk()->assertJsonPath('data.product.status', 'published');
+        $this->assertDatabaseHas('catalogue_products', ['id' => $p['id'], 'measurements' => '[]']);
     }
 
     public function test_product_edits_preserve_collection_product_order(): void

@@ -104,6 +104,19 @@ class FulfilmentTest extends TestCase
         return $this->staff('orders/'.$this->order['id'].'/shipments', ['quote_id' => $q['id'], 'confirmed' => true])->assertOk()->json('data');
     }
 
+    public function test_always_available_paid_order_can_allocate_without_committed_stock(): void
+    {
+        config(['catalogue.track_stock' => false]);
+        $before = (int) DB::table('stock_balances')->sum('on_hand');
+        $order = $this->paidOrder(2);
+        $this->assertSame($before, (int) DB::table('stock_balances')->sum('on_hand'));
+        $this->assertSame(0, DB::table('commerce_reservations')->where('order_id', $order['id'])->count());
+        $q = $this->staff('orders/'.$order['id'].'/shipment-quotes', $this->parcel(2, $order))->assertOk()->json('data');
+        $this->staff('orders/'.$order['id'].'/shipments', ['quote_id' => $q['id'], 'confirmed' => true])->assertOk();
+        $this->assertSame(0, app(Shipments::class)->remaining($order['id'])[0]['remaining']);
+        $this->staff('orders/'.$order['id'].'/shipment-quotes', $this->parcel(1, $order))->assertUnprocessable();
+    }
+
     private function trackingToken(): string
     {
         $this->guest('request', ['reference' => $this->order['reference'], 'email' => 'sandbox-guest@example.test'])->assertOk();

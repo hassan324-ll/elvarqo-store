@@ -37,6 +37,8 @@ class Shipments
             Pricing::fail('location_id', 'Choose an active dispatch location.');
         }
         $remaining = collect($this->remaining($order))->keyBy('order_item_id');
+        $snapshot = json_decode(DB::table('commerce_order_snapshots')->where('order_id', $order)->value('payload'), true);
+        $stockModes = collect($snapshot['items'] ?? [])->keyBy('variant_id');
         $items = [];
         foreach ($v['items'] as $row) {
             $id = (int) $row['order_item_id'];
@@ -47,7 +49,8 @@ class Shipments
             }
             $committed = (int) DB::table('commerce_reservations as r')->join('stock_balances as b', 'b.id', '=', 'r.balance_id')->where('r.order_id', $order)->where('r.variant_id', $i['variant_id'])->where('r.state', 'committed')->where('b.location_id', $location->id)->sum('r.quantity');
             $used = (int) DB::table('fulfilment_items as i')->join('order_fulfilments as f', 'f.id', '=', 'i.fulfilment_id')->where('f.order_id', $order)->where('f.location_id', $location->id)->where('f.state', '!=', 'cancelled')->where('i.order_item_id', $id)->sum('i.quantity');
-            if ($qty > $committed - $used) {
+            $tracked = ($stockModes->get($i['variant_id'])['stock_tracked'] ?? true) !== false;
+            if ($tracked && $qty > $committed - $used) {
                 Pricing::fail('location_id', 'This location has insufficient committed units for the selected order items.');
             }$items[$id] = ['order_item_id' => $id, 'variant_id' => $i['variant_id'], 'quantity' => $qty];
         }ksort($items);

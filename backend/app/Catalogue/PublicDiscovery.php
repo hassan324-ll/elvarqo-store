@@ -65,7 +65,7 @@ class PublicDiscovery
         }if (isset($v['max_price'])) {
             $eligible->where('v.price_minor', '<=', $v['max_price']);
         }
-        if (($v['stock'] ?? '') === 'in_stock') {
+        if (($v['stock'] ?? '') === 'in_stock' && Availability::tracked()) {
             $eligible->whereRaw('(SELECT COALESCE(SUM(b.on_hand-b.reserved),0) FROM stock_balances b JOIN stock_locations l ON l.id=b.location_id WHERE b.variant_id=v.id AND l.active=?) > 0', [true]);
         }
         $q = (clone $base)->whereExists((clone $eligible)->selectRaw('1'))->select('catalogue_products.*')->selectSub((clone $eligible)->selectRaw('MIN(v.price_minor)'), 'matching_price');
@@ -102,7 +102,7 @@ class PublicDiscovery
                     return false;
                 }
 
-                return ($v['stock'] ?? '') !== 'in_stock' || $variant['available'] > 0;
+                return ($v['stock'] ?? '') !== 'in_stock' || $variant['is_in_stock'];
             });
             $data['matched_variant_ids'] = array_column($allowed, 'id');
             $data['listing_price_minor'] = (int) $p->matching_price;

@@ -1,9 +1,20 @@
-import { useEffect, useState, useCallback, useRef } from 'react';
+import SupplierDetails from './SupplierDetails';
+import QuickVariants from './QuickVariants';
+import {
+  useEffect,
+  useState,
+  useCallback,
+  useRef,
+  useImperativeHandle,
+  type Ref,
+} from 'react';
+import { ProductField as Field } from './ProductField';
+import { sizeOptions } from './size-options';
+import { isUnusedVariant, priceFields, variantPrices } from './variant-helper';
 import {
   Badge,
   Button,
   DataTable,
-  Field,
   Icon,
   Modal,
   Select,
@@ -17,7 +28,7 @@ import {
   money,
 } from './types';
 type PendingImage = { id: string; file: File; preview: string; alt: string };
-type EditVariant = Variant & { price: string; compare: string };
+type EditVariant = Variant & { price: string; sale: string };
 const blank = (): EditVariant => ({
   sku: '',
   barcode: null,
@@ -26,7 +37,7 @@ const blank = (): EditVariant => ({
   price_minor: 0,
   compare_at_minor: null,
   price: '',
-  compare: '',
+  sale: '',
   currency: 'GBP',
   weight_grams: null,
   low_stock_threshold: 5,
@@ -53,24 +64,29 @@ const newProduct = (): Product => ({
   variants: [],
   media: [],
 });
+export type ProductEditorHandle = { requestClose: () => void };
 export default function ProductEditor({
   id,
   canManage,
   onBack,
   initialCollectionId,
+  closeRef,
 }: {
   id: number | 'new';
   canManage: boolean;
   onBack: () => void;
   initialCollectionId?: number | null;
+  closeRef?: Ref<ProductEditorHandle>;
 }) {
   const [product, setProduct] = useState<Product>(newProduct);
+  const editorElement = useRef<HTMLDivElement>(null);
   const [saved, setSaved] = useState<Product | null>(null);
   const [variants, setVariants] = useState<EditVariant[]>([]);
   const [collectionIds, setCollectionIds] = useState<number[]>(
     initialCollectionId ? [initialCollectionId] : [],
   );
   const [collections, setCollections] = useState<Collection[]>([]);
+  const [categorySearch, setCategorySearch] = useState('');
   const [dirty, setDirty] = useState(false);
   const [preview, setPreview] = useState(false);
   const [confirm, setConfirm] = useState<
@@ -144,11 +160,7 @@ export default function ProductEditor({
     setVariants(
       p.variants.map((v) => ({
         ...v,
-        price: (v.price_minor / 100).toFixed(2),
-        compare:
-          v.compare_at_minor === null
-            ? ''
-            : (v.compare_at_minor / 100).toFixed(2),
+        ...priceFields(v),
       })),
     );
     setCollectionIds(p.collections.map((c) => c.id));
@@ -202,15 +214,43 @@ export default function ProductEditor({
     );
     setDirty(true);
   }
+  function closeEditor() {
+    if (action.busy || mediaAction.busy) return;
+    const mediaDirty =
+      saved && JSON.stringify(mediaEdits) !== JSON.stringify(saved.media);
+    if (
+      (!dirty && !pendingImages.length && !mediaDirty) ||
+      window.confirm('Discard unsaved product changes and selected images?')
+    )
+      onBack();
+  }
+  useImperativeHandle(closeRef, () => ({ requestClose: closeEditor }));
   async function save(addAnother = false) {
-    const parse = (value: string) =>
-      /^\d+(\.\d{1,2})?$/.test(value)
-        ? Number(value.split('.')[0]) * 100 +
-          Number((value.split('.')[1] || '').padEnd(2, '0'))
-        : null;
     await action.run(async () => {
       if (pendingImages.some((i) => !i.alt.trim()))
         throw Error('Add a description for each selected image.');
+      const usedVariants = variants.filter((v) => !isUnusedVariant(v));
+      for (const v of usedVariants) {
+        const missing = [
+          !v.sku.trim() && 'SKU',
+          !v.colour.trim() && 'colour',
+          !v.size.trim() && 'size',
+        ].filter(Boolean);
+        if (missing.length) {
+          const index = variants.indexOf(v);
+          const row = editorElement.current?.querySelector<HTMLDetailsElement>(
+            `[data-variant-index="${index}"]`,
+          );
+          if (row) {
+            row.open = true;
+            row.scrollIntoView({ block: 'center', behavior: 'smooth' });
+            row.querySelector('input')?.focus({ preventScroll: true });
+          }
+          throw Error(
+            `Variant ${index + 1} is missing ${missing.join(', ')}. Complete it or remove that row. In Quick variant builder, click Generate variants before saving; selecting options alone does not create variants.`,
+          );
+        }
+      }
       const body = {
         title: product.title,
         slug: product.slug,
@@ -229,14 +269,13 @@ export default function ProductEditor({
         measurements: product.measurements,
         version: product.version,
         collection_ids: collectionIds,
-        variants: variants.map((v) => ({
+        variants: usedVariants.map((v) => ({
           ...(v.id ? { id: v.id } : {}),
           sku: v.sku,
           barcode: v.barcode || null,
           colour: v.colour,
           size: v.size,
-          price_minor: parse(v.price),
-          compare_at_minor: v.compare ? parse(v.compare) : null,
+          ...variantPrices(v.price, v.sale),
           currency: 'GBP',
           weight_grams: v.weight_grams,
           low_stock_threshold: v.low_stock_threshold,
@@ -246,15 +285,6 @@ export default function ProductEditor({
           care: v.care,
         })),
       };
-      if (
-        variants.some(
-          (v) =>
-            parse(v.price) === null || (v.compare && parse(v.compare) === null),
-        )
-      )
-        throw Error(
-          'Selling and compare-at prices must be non-negative GBP amounts with at most two decimal places.',
-        );
       const result = await request<{ product: Product }>(
         product.id ? 'products/' + product.id : 'products',
         body,
@@ -345,6 +375,9 @@ export default function ProductEditor({
       <section className="panel">
         <h1>Load product</h1>
         <Feedback action={action} />
+        {canManage && product.id > 0 && (
+          <SupplierDetails productId={product.id} />
+        )}
         <Button busy={action.busy} onClick={() => location.reload()}>
           Retry loading
         </Button>
@@ -354,7 +387,7 @@ export default function ProductEditor({
       </section>
     );
   return (
-    <div className="catalogue-workspace product-editor">
+    <div ref={editorElement} className="catalogue-workspace product-editor">
       <header className="admin-page-heading">
         <div>
           <p className="eyebrow">
@@ -376,15 +409,8 @@ export default function ProductEditor({
       <div className="catalogue-actions product-editor-toolbar">
         <Button
           variant="secondary"
-          onClick={() => {
-            if (
-              (!dirty && !pendingImages.length) ||
-              window.confirm(
-                'Discard unsaved product changes and selected images?',
-              )
-            )
-              onBack();
-          }}
+          disabled={action.busy || mediaAction.busy}
+          onClick={closeEditor}
         >
           Back to products
         </Button>
@@ -487,40 +513,57 @@ export default function ProductEditor({
             />
             <div className="field">
               <span className="field-label">Product categories</span>
-              {collections.some(
-                (c) =>
-                  (c.kind === 'category' && c.parent_id) ||
-                  collectionIds.includes(c.id),
-              ) ? (
-                collections
-                  .filter(
-                    (c) =>
-                      (c.kind === 'category' && c.parent_id) ||
-                      collectionIds.includes(c.id),
-                  )
-                  .map((c) => (
-                    <label className="catalogue-check" key={c.id}>
-                      <input
-                        type="checkbox"
-                        checked={collectionIds.includes(c.id)}
-                        onChange={(e) => {
-                          setCollectionIds((ids) =>
-                            e.target.checked
-                              ? [...ids, c.id]
-                              : ids.filter((id) => id !== c.id),
-                          );
-                          setDirty(true);
-                        }}
-                      />
-                      {c.kind === 'category'
-                        ? `${collections.find((p) => p.id === c.parent_id)?.title || 'Unassigned'} / ${c.title}`
-                        : `${c.title} (existing collection assignment)`}
-                      {c.active ? '' : ' (inactive)'}
-                    </label>
-                  ))
-              ) : (
-                <p>Create a collection and add a category inside it first.</p>
-              )}
+              <Field
+                label="Find a category"
+                placeholder="Search collection or category…"
+                value={categorySearch}
+                onChange={(e) => setCategorySearch(e.target.value)}
+              />
+              <small>
+                {collections
+                  .filter((c) => collectionIds.includes(c.id))
+                  .map((c) => c.title)
+                  .join(' / ') || 'Choose a category below'}
+              </small>
+              <div className="product-category-options">
+                {collections.some(
+                  (c) =>
+                    (c.kind === 'category' && c.parent_id) ||
+                    collectionIds.includes(c.id),
+                ) ? (
+                  collections
+                    .filter(
+                      (c) =>
+                        ((c.kind === 'category' && c.parent_id) ||
+                          collectionIds.includes(c.id)) &&
+                        `${collections.find((p) => p.id === c.parent_id)?.title || ''} ${c.title}`
+                          .toLowerCase()
+                          .includes(categorySearch.toLowerCase()),
+                    )
+                    .map((c) => (
+                      <label className="catalogue-check" key={c.id}>
+                        <input
+                          type="checkbox"
+                          checked={collectionIds.includes(c.id)}
+                          onChange={(e) => {
+                            setCollectionIds((ids) =>
+                              e.target.checked
+                                ? [...ids, c.id]
+                                : ids.filter((id) => id !== c.id),
+                            );
+                            setDirty(true);
+                          }}
+                        />
+                        {c.kind === 'category'
+                          ? `${collections.find((p) => p.id === c.parent_id)?.title || 'Unassigned'} / ${c.title}`
+                          : `${c.title} (existing collection assignment)`}
+                        {c.active ? '' : ' (inactive)'}
+                      </label>
+                    ))
+                ) : (
+                  <p>Create a collection and add a category inside it first.</p>
+                )}
+              </div>
             </div>
           </div>
           <TextArea
@@ -530,17 +573,17 @@ export default function ProductEditor({
           />
           <div className="catalogue-grid">
             <TextArea
-              label="Material & construction"
+              label="Material & construction (optional)"
               value={product.material || ''}
               onChange={(e) => field('material', e.target.value)}
             />
             <TextArea
-              label="Fit information"
+              label="Fit information (optional)"
               value={product.fit || ''}
               onChange={(e) => field('fit', e.target.value)}
             />
             <TextArea
-              label="Care instructions"
+              label="Care instructions (optional)"
               value={product.care || ''}
               onChange={(e) => field('care', e.target.value)}
             />
@@ -645,12 +688,62 @@ export default function ProductEditor({
             Enter each colour/size combination once. Prices are GBP; stock is
             managed in Inventory.
           </p>
+          <QuickVariants
+            key={`${product.id}:${product.media.map((m) => m.id).join(',')}:${pendingImages.map((m) => m.id).join(',')}`}
+            productId={product.id}
+            existing={variants.filter((v) => !isUnusedVariant(v))}
+            photos={[
+              ...product.media.map((m) => ({
+                id: m.id,
+                url: m.url,
+                alt: m.alt,
+              })),
+              ...pendingImages.map((m) => ({
+                id: m.id,
+                url: m.preview,
+                alt: m.alt,
+              })),
+            ]}
+            onGenerate={(rows) => {
+              setVariants((current) => [
+                ...current.filter((v) => !isUnusedVariant(v)),
+                ...rows.map((row) => ({
+                  ...blank(),
+                  ...row,
+                  ...priceFields(row),
+                  low_stock_threshold: 0,
+                })),
+              ]);
+              setDirty(true);
+            }}
+            onPrice={(price, sale) => {
+              setVariants((current) =>
+                current
+                  .filter((v) => !isUnusedVariant(v))
+                  .map((v) => ({
+                    ...v,
+                    price,
+                    sale,
+                  })),
+              );
+              setDirty(true);
+            }}
+          />
           {variants.map((v, i) => (
-            <article key={i} className="variant-card">
-              <h3>
-                Variant {i + 1}
-                {v.id ? ` / ID ${v.id}` : ''}
-              </h3>
+            <details
+              key={v.id || `new-${i}`}
+              className="variant-card"
+              data-variant-index={i}
+            >
+              <summary>
+                {v.colour && v.size
+                  ? `${v.colour} / ${v.size}`
+                  : `Variant ${i + 1}`}
+                {v.price
+                  ? ` · £${v.sale || v.price}${v.sale ? ' sale' : ''}`
+                  : ' · Add price'}
+                {v.sku ? ` · ${v.sku}` : ''}
+              </summary>
               <div className="catalogue-grid">
                 <Field
                   label={`Colour ${i + 1}`}
@@ -659,6 +752,7 @@ export default function ProductEditor({
                 />
                 <Field
                   label={`Size ${i + 1}`}
+                  list="catalogue-size-options"
                   value={v.size}
                   onChange={(e) => variant(i, 'size', e.target.value)}
                 />
@@ -675,16 +769,26 @@ export default function ProductEditor({
                   onChange={(e) => variant(i, 'barcode', e.target.value)}
                 />
                 <Field
-                  label={`Selling price GBP ${i + 1}`}
+                  label={`Regular price GBP ${i + 1}`}
+                  type="number"
+                  min="0"
+                  max="1000000"
+                  step="0.01"
                   inputMode="decimal"
+                  hint="Use the arrows to change the price by £0.01."
                   value={v.price}
                   onChange={(e) => variant(i, 'price', e.target.value)}
                 />
                 <Field
-                  label={`Compare-at price GBP ${i + 1}`}
+                  label={`Sale price GBP ${i + 1} (optional)`}
+                  type="number"
+                  min="0.01"
+                  max="1000000"
+                  step="0.01"
                   inputMode="decimal"
-                  value={v.compare}
-                  onChange={(e) => variant(i, 'compare', e.target.value)}
+                  hint="Lower than the regular price. Leave empty or clear it to remove the sale."
+                  value={v.sale}
+                  onChange={(e) => variant(i, 'sale', e.target.value)}
                 />
                 <Field
                   label={`Weight grams ${i + 1}`}
@@ -770,15 +874,22 @@ export default function ProductEditor({
               >
                 Remove variant {i + 1}
               </Button>
-            </article>
+            </details>
           ))}
           {!variants.length && (
             <p>No variants yet. Add variants before publishing.</p>
           )}
+          <datalist id="catalogue-size-options">
+            {sizeOptions
+              .flatMap((group) => group.sizes)
+              .map((size) => (
+                <option key={size} value={size} />
+              ))}
+          </datalist>
         </section>
         <section className="panel">
           <div className="card-heading">
-            <h2>Garment measurements</h2>
+            <h2>Garment measurements (optional)</h2>
             <Button
               variant="secondary"
               onClick={() =>
@@ -792,7 +903,8 @@ export default function ProductEditor({
             </Button>
           </div>
           <p className="muted">
-            Actual garment measurements in centimetres; enter one row per size.
+            Optional: enter supplier-verified measurements in centimetres, one
+            row per size. Leave this section empty if unknown.
           </p>
           {product.measurements.map((row, i) => (
             <div className="measurement-row" key={i}>
@@ -1061,7 +1173,9 @@ export default function ProductEditor({
                 v.colour,
                 v.size,
                 money(v.price_minor),
-                v.available ?? 0,
+                v.stock_tracked === false
+                  ? 'In stock (not counted)'
+                  : (v.available ?? 0),
                 v.active ? 'Active' : 'Inactive',
               ])}
             />

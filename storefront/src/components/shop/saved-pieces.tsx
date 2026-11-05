@@ -2,7 +2,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Button } from '../../ui/components';
-import { type Product, loadSaved } from '../../lib/catalogue-types';
+import {
+  type Product,
+  loadSaved,
+  variantInStock,
+} from '../../lib/catalogue-types';
 import { useWishlist } from './wishlist';
 import ProductGrid from './product-grid';
 export default function SavedPieces() {
@@ -53,7 +57,7 @@ export default function SavedPieces() {
     const item = items.find((i) => i.product_id === p.id);
     return (
       item?.variant_id &&
-      !p.variants.some((v) => v.id === item.variant_id && v.available > 0)
+      !p.variants.some((v) => v.id === item.variant_id && variantInStock(v))
     );
   });
   return (

@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Commerce\Bags;
 use App\Commerce\Checkout;
+use App\Commerce\Pricing;
 use App\Jobs\DeliverSandboxOrderMail;
 use App\Models\CatalogueVariant;
 use App\Models\StaffRole;
@@ -107,6 +108,59 @@ class CommerceTest extends TestCase
         $this->send('POST', 'bag/items', ['variant_id' => $this->variant, 'quantity' => 2, 'revision' => 1])->assertUnprocessable();
         $this->send('POST', 'bag/items', ['variant_id' => $this->variant, 'quantity' => 0, 'revision' => 2])->assertOk()->assertJsonCount(0, 'data.items');
         $this->assertFalse(DB::table('commerce_bags')->where('token_hash', $this->token)->exists());
+    }
+
+    public function test_always_available_can_checkout_and_settle_without_stock_balances(): void
+    {
+        config(['catalogue.track_stock' => false]);
+        DB::table('stock_balances')->delete();
+        $o = $this->start();
+        $this->assertFalse(app(Checkout::class)->snapshot($o['id'])['items'][0]['stock_tracked']);
+        $this->assertDatabaseCount('commerce_reservations', 0);
+        $this->assertDatabaseCount('commerce_stock_events', 0);
+        $this->provider['payment_status'] = 'paid';
+        $this->provider['status'] = 'complete';
+        $this->event()->assertOk();
+        $this->assertDatabaseHas('commerce_orders', ['id' => $o['id'], 'payment_state' => 'paid']);
+        $this->event()->assertOk();
+        $this->assertDatabaseCount('stock_balances', 0);
+    }
+
+    public function test_always_available_expiry_requires_no_stock_and_inactive_variants_stay_blocked(): void
+    {
+        config(['catalogue.track_stock' => false]);
+        DB::table('stock_balances')->update(['on_hand' => 0]);
+        $o = $this->start();
+        $this->provider['status'] = 'expired';
+        $this->event('checkout.session.expired')->assertOk();
+        $this->assertDatabaseHas('commerce_orders', ['id' => $o['id'], 'payment_state' => 'expired']);
+        CatalogueVariant::findOrFail($this->variant)->update(['active' => false]);
+        $this->assertTrue(app(Pricing::class)->lines([$this->variant => 1])[0]['unavailable']);
+    }
+
+    public function test_switching_modes_retains_existing_order_reservations_and_does_not_invent_stock(): void
+    {
+        $o = $this->start();
+        $this->assertDatabaseCount('commerce_reservations', 1);
+        config(['catalogue.track_stock' => false]);
+        $this->provider['payment_status'] = 'paid';
+        $this->provider['status'] = 'complete';
+        $this->event()->assertOk();
+        $this->assertSame(4, (int) DB::table('stock_balances')->sum('on_hand'));
+        $this->assertSame(0, (int) DB::table('stock_balances')->sum('reserved'));
+        config(['catalogue.track_stock' => true]);
+        DB::table('stock_balances')->update(['on_hand' => 0]);
+        $this->assertTrue(app(Pricing::class)->lines([$this->variant => 1])[0]['unavailable']);
+    }
+
+    public function test_stock_mode_is_server_controlled_and_changes_invalidate_a_quote(): void
+    {
+        config(['catalogue.track_stock' => false]);
+        $this->add();
+        $v = $this->input();
+        config(['catalogue.track_stock' => true]);
+        $this->send('POST', 'checkout', $v + ['stock_tracked' => false])->assertUnprocessable();
+        $this->assertDatabaseCount('commerce_orders', 0);
     }
 
     public function test_server_ignores_browser_prices_and_rounds_test_discount_totals(): void
@@ -434,6 +488,6 @@ class CommerceTest extends TestCase
     {
         $this->send('POST', 'bag/items', ['variant_id' => (string) $this->variant, 'quantity' => '2', 'revision' => '1'])->assertOk()->assertJsonPath('data.items.0.quantity', 2);
         $this->send('POST', 'quote', array_replace(F::details(), ['revision' => '2']))->assertOk()->assertJsonPath('data.snapshot.items.0.quantity', 2);
-        $this->send('POST', 'bag/items', ['variant_id' => (string) $this->variant, 'quantity' => '0', 'revision' => '2'])->assertOk()->assertJsonCount(0,'data.items');
+        $this->send('POST', 'bag/items', ['variant_id' => (string) $this->variant, 'quantity' => '0', 'revision' => '2'])->assertOk()->assertJsonCount(0, 'data.items');
     }
 }

@@ -32,7 +32,7 @@ const pages: Record<
     title: 'Find your fit',
     phase: 'GARMENT-SPECIFIC MEASUREMENTS',
     description:
-      'Open a product and choose Size guide for its garment-specific measurements in centimetres or inches. Select a colour first to include any variant measurement overrides.',
+      'Product size guides appear only where garment measurements have been supplied. If no guide is shown, a verified size chart is not available for that product.',
   },
   contact: {
     title: 'Customer care',
@@ -65,6 +65,21 @@ const pages: Record<
       'This interface supports keyboard navigation, visible focus, reduced motion and responsive reflow. Full accessibility verification continues throughout development.',
   },
 };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const page = pages[slug];
+  if (!page) notFound();
+  return {
+    title: page.title,
+    description: page.description,
+    alternates: { canonical: '/' + slug },
+    robots: { index: false, follow: true },
+  };
+}
 export function generateStaticParams() {
   return Object.keys(pages).map((slug) => ({ slug }));
 }

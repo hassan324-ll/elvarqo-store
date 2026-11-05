@@ -17,6 +17,7 @@
     </source>
     <php>
         <env name="APP_ENV" value="testing"/>
+        <env name="CATALOGUE_TRACK_STOCK" value="true" force="true"/>
         <!-- Existing provider contract tests explicitly retain the legacy Stripe sandbox. Wise tests override this. -->
         <env name="PAYMENT_PROVIDER" value="stripe_sandbox" force="true"/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>

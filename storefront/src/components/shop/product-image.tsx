@@ -4,9 +4,11 @@ import type { ProductMedia } from '../../lib/catalogue-types';
 export default function ProductImage({
   media,
   priority = false,
+  sizes = '(max-width: 767px) 90vw, (max-width:1100px) 45vw, 33vw',
 }: {
   media: ProductMedia | undefined;
   priority?: boolean;
+  sizes?: string;
 }) {
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
@@ -56,7 +58,8 @@ export default function ProductImage({
           ? undefined
           : media.sources.map((s) => `${s.url} ${s.width}w`).join(',')
       }
-      sizes="(max-width: 767px) 90vw, (max-width:1100px) 45vw, 33vw"
+      sizes={sizes}
+      decoding="async"
       width={media.width}
       height={media.height}
       alt={media.alt}

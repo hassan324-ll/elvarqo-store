@@ -1,4 +1,5 @@
 import './forms.css';
+import BulkImport from './BulkImport';
 import { useEffect, useState, useCallback, useRef } from 'react';
 import {
   Badge,
@@ -14,12 +15,14 @@ import {
 import type { StaffIdentity } from '../lib/staff-api';
 import { Feedback, request, TextArea, useAction } from './common';
 import { type Collection, type Page, type Product, money } from './types';
-import ProductEditor from './ProductEditor';
+import ProductEditor, { type ProductEditorHandle } from './ProductEditor';
+import ProductDialog from './ProductDialog';
 import Collections from './Collections';
 import CategoryImageInput, { groupSaveBody } from './CategoryImageInput';
 import GroupActions from './GroupActions';
 export default function Catalogue({ staff }: { staff: StaffIdentity }) {
   const canManage = staff.permissions.includes('catalogue.manage');
+  const editor = useRef<ProductEditorHandle>(null);
   const params = new URLSearchParams(location.search);
   const [tab, setTab] = useState('products');
   const [initialCollectionId, setInitialCollectionId] = useState<number | null>(
@@ -151,17 +154,25 @@ export default function Catalogue({ staff }: { staff: StaffIdentity }) {
     else url.searchParams.set('product', String(id));
     history.replaceState(null, '', url);
   }
-  if (editing !== null)
-    return (
-      <ProductEditor
-        id={editing}
-        initialCollectionId={initialCollectionId}
-        canManage={canManage}
-        onBack={() => edit(null)}
-      />
-    );
+  if (tab === 'bulk' && canManage)
+    return <BulkImport onBack={() => setTab('products')} />;
   return (
     <div className="catalogue-workspace">
+      <ProductDialog
+        open={editing !== null}
+        title={editing === 'new' ? 'Add product' : 'Product details'}
+        onClose={() => editor.current?.requestClose()}
+      >
+        {editing !== null && (
+          <ProductEditor
+            id={editing}
+            closeRef={editor}
+            initialCollectionId={initialCollectionId}
+            canManage={canManage}
+            onBack={() => edit(null)}
+          />
+        )}
+      </ProductDialog>
       <header className="admin-page-heading">
         <div>
           <p className="eyebrow">ELVARQO / CATALOGUE</p>
@@ -171,6 +182,11 @@ export default function Catalogue({ staff }: { staff: StaffIdentity }) {
           </p>
         </div>
         <div className="catalogue-heading-actions">
+          {canManage && (
+            <Button variant="secondary" onClick={() => setTab('bulk')}>
+              Bulk Import
+            </Button>
+          )}
           <Button
             variant="secondary"
             aria-pressed={tab === 'collections'}
@@ -475,7 +491,9 @@ export default function Catalogue({ staff }: { staff: StaffIdentity }) {
                   p.variants.length
                     ? `From ${money(Math.min(...p.variants.map((v) => v.price_minor)))}`
                     : '—',
-                  p.variants.reduce((n, v) => n + (v.available || 0), 0),
+                  p.variants.some((v) => v.active && v.stock_tracked === false)
+                    ? 'In stock'
+                    : p.variants.reduce((n, v) => n + (v.available || 0), 0),
                   <Badge
                     key="cell-7"
                     tone={p.status === 'published' ? 'success' : 'neutral'}

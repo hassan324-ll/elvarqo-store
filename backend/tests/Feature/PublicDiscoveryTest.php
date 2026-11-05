@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\CatalogueCollection;
+use App\Models\CatalogueMedia;
 use App\Models\CatalogueProduct;
 use App\Models\CatalogueVariant;
 use App\Models\StockLocation;
@@ -32,6 +33,92 @@ class PublicDiscoveryTest extends TestCase
         }
 
         return $p;
+    }
+
+    public function test_sitemap_contains_only_current_public_products_and_useful_visible_groups_and_fresh_dates(): void
+    {
+        $this->travelTo(now()->startOfSecond());
+        $women = CatalogueCollection::create(['title' => 'Women', 'slug' => 'women', 'kind' => 'collection', 'active' => true]);
+        $knit = CatalogueCollection::create(['title' => 'Knitwear', 'slug' => 'womens-knitwear', 'kind' => 'category', 'parent_id' => $women->id, 'active' => true]);
+        $empty = CatalogueCollection::create(['title' => 'Empty', 'slug' => 'empty', 'kind' => 'category', 'parent_id' => $women->id, 'active' => true]);
+        $hidden = CatalogueCollection::create(['title' => 'Hidden', 'slug' => 'hidden', 'kind' => 'category', 'parent_id' => $women->id, 'active' => false]);
+        $public = $this->fixture('Public', 'current-slug');
+        $draft = $this->fixture('Draft', 'private-draft', 'draft');
+        $inactive = $this->fixture('Inactive', 'inactive-product');
+        CatalogueVariant::where('product_id', $inactive->id)->update(['active' => false]);
+        $deleted = $this->fixture('Deleted', 'deleted-product');
+        $deleted->delete();
+        foreach ([$knit, $hidden] as $group) {
+            DB::table('catalogue_collection_product')->insert(['collection_id' => $group->id, 'product_id' => $public->id]);
+        }
+        DB::table('catalogue_collection_product')->insert(['collection_id' => $empty->id, 'product_id' => $draft->id]);
+        $data = $this->getJson('/api/v1/catalogue/sitemap')->assertOk()->assertHeader('Cache-Control', 'no-store, private')->json('data');
+        $this->assertSame([['slug' => 'current-slug', 'lastmod' => $public->updated_at->toISOString()]], $data['products']);
+        $this->assertSame(['women', 'womens-knitwear'], array_column($data['groups'], 'slug'));
+        $this->assertSame(1, $data['total']);
+        $this->assertSame(['products', 'groups', 'page', 'last_page', 'total'], array_keys($data));
+        $this->travel(1)->hours();
+        $public->update(['slug' => 'renamed-public']);
+        $this->getJson('/api/v1/catalogue/sitemap')->assertJsonPath('data.products.0.slug', 'renamed-public')->assertJsonPath('data.products.0.lastmod', $public->updated_at->toISOString());
+        $public->update(['status' => 'draft']);
+        $this->getJson('/api/v1/catalogue/sitemap')->assertJsonCount(0, 'data.products')->assertJsonCount(0, 'data.groups');
+        $this->getJson('/api/v1/catalogue/sitemap?page=0')->assertUnprocessable();
+    }
+
+    public function test_only_public_published_product_images_permit_indexing(): void
+    {
+        $product = $this->fixture();
+        $id = (string) Str::uuid();
+        $directory = storage_path('framework/testing/schema-image-'.$id);
+        mkdir($directory.'/'.$id, 0777, true);
+        config(['catalogue.media_root' => $directory]);
+        $file = $directory.'/'.$id.'/640.webp';
+        file_put_contents($file, base64_decode('UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA'));
+        CatalogueMedia::create(['id' => $id, 'product_id' => $product->id, 'alt' => 'Test image', 'width' => 1, 'height' => 1, 'sizes' => [], 'original_format' => 'webp', 'sha256' => hash_file('sha256', $file)]);
+        try {
+            $url = '/api/v1/catalogue/media/'.$id.'/640';
+            $this->get($url)->assertOk()->assertHeader('Content-Type', 'image/webp')->assertHeader('X-Robots-Tag', 'index, follow');
+            $product->update(['status' => 'draft']);
+            $this->get($url)->assertNotFound();
+            $this->get('/api/v1/staff/catalogue/media/'.$id.'/640')->assertUnauthorized();
+        } finally {
+            unlink($file);
+            rmdir($directory.'/'.$id);
+            rmdir($directory);
+        }
+    }
+
+    public function test_public_product_exposes_real_group_parent_for_breadcrumbs(): void
+    {
+        $parent = CatalogueCollection::create(['title' => 'Women', 'slug' => 'women', 'kind' => 'collection', 'active' => true]);
+        $category = CatalogueCollection::create(['title' => 'Knitwear', 'slug' => 'womens-knitwear', 'kind' => 'category', 'parent_id' => $parent->id, 'active' => true]);
+        $product = $this->fixture();
+        foreach ([$parent, $category] as $group) {
+            DB::table('catalogue_collection_product')->insert(['product_id' => $product->id, 'collection_id' => $group->id]);
+        }
+        $data = $this->getJson('/api/v1/catalogue/products/'.$product->slug)->assertOk()->json('data.product.collections');
+        $this->assertSame($parent->id, collect($data)->firstWhere('id', $category->id)['parent_id']);
+        $this->assertNull(collect($data)->firstWhere('id', $parent->id)['parent_id']);
+    }
+
+    public function test_always_available_public_filter_reports_true_without_inventing_quantities(): void
+    {
+        $p = $this->fixture();
+        DB::table('stock_balances')->delete();
+        config(['catalogue.track_stock' => false]);
+        $data = $this->getJson('/api/v1/catalogue/products?stock=in_stock')->assertOk()->json('data');
+        $this->assertSame(1, $data['total']);
+        foreach ($data['items'][0]['variants'] as $variant) {
+            $this->assertFalse($variant['stock_tracked']);
+            $this->assertTrue($variant['is_in_stock']);
+            $this->assertSame(0, $variant['available']);
+        }
+        config(['catalogue.track_stock' => true]);
+        $this->getJson('/api/v1/catalogue/products?stock=in_stock')->assertOk()->assertJsonPath('data.total', 0);
+        config(['catalogue.track_stock' => false]);
+        $p->update(['status' => 'draft']);
+        $this->getJson('/api/v1/catalogue/products?stock=in_stock')->assertOk()->assertJsonPath('data.total', 0);
+        $this->assertDatabaseCount('stock_balances', 0);
     }
 
     public function test_trending_uses_recent_confirmed_paid_sales_scoped_to_visible_categories(): void

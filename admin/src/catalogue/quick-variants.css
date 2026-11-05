@@ -1,0 +1,118 @@
+.quick-variants {
+  padding: 24px;
+  margin: 20px 0;
+  border: 1px solid #d8dfd3;
+  border-radius: 12px;
+  background: #f6f8f3;
+}
+.quick-variants h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.quick-variants .card-heading p {
+  margin: 0;
+}
+.quick-variants .catalogue-grid {
+  margin: 22px 0;
+}
+.colour-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  max-height: 520px;
+  overflow-y: auto;
+  margin: 20px 0;
+  padding: 2px;
+}
+.colour-photo-card {
+  background: white;
+  border: 1px solid #dce2d6;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+.colour-photo-card.excluded {
+  background: #efefeb;
+}
+.colour-photo-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #f7f7f4;
+  border-radius: 6px;
+}
+.colour-photo-card .catalogue-check {
+  margin: 12px 0;
+  font-size: 12px;
+}
+.colour-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.colour-name > span {
+  flex: 0 0 16px;
+  height: 16px;
+  border: 1px solid #adb6a4;
+  border-radius: 50%;
+}
+.colour-name .field {
+  flex: 1;
+  min-width: 0;
+}
+.colour-name input {
+  padding-inline: 10px !important;
+  background-image: none !important;
+}
+.colour-name .input-icon {
+  display: none;
+}
+.colour-photo-card small {
+  display: block;
+  margin-top: 8px;
+  color: #645c4d;
+}
+.quick-option-summary {
+  align-self: center;
+  overflow-wrap: anywhere;
+}
+.quick-option-summary p {
+  margin: 6px 0;
+}
+.quick-variant-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+.product-category-options {
+  max-height: 240px;
+  overflow: auto;
+  margin-top: 12px;
+  padding: 4px 10px;
+  border: 1px solid #e2e6dc;
+  border-radius: 8px;
+}
+.product-category-options .catalogue-check {
+  margin: 10px 0;
+}
+.variant-card > summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 4px 0;
+}
+.variant-card[open] > summary {
+  margin-bottom: 18px;
+}
+@media (max-width: 600px) {
+  .quick-variants {
+    padding: 16px;
+  }
+  .quick-variants .card-heading {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .colour-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

@@ -10,12 +10,17 @@
     "format": "prettier --write . ../shared/ui ../shared/sync-ui.mjs && npm run sync-ui",
     "format:check": "prettier --check . ../shared/ui ../shared/sync-ui.mjs",
     "typecheck": "tsc --noEmit",
-    "check": "npm run format:check && npm run lint && npm run typecheck && npm run build",
+    "test:cards": "node --test --test-isolation=none tests/product-card.test.mjs",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test:cards && npm run test:indexing && npm run test:sitemap && npm run test:structured-data && npm run test:seo && npm run build",
     "sync-ui": "node ../shared/sync-ui.mjs storefront",
     "predev": "npm run sync-ui",
     "prebuild": "npm run sync-ui",
     "precheck": "npm run sync-ui",
-    "preformat": "npm run sync-ui"
+    "preformat": "npm run sync-ui",
+    "test:indexing": "node --test --test-isolation=none tests/indexing-policy.test.mjs",
+    "test:sitemap": "node --test --test-isolation=none tests/sitemap.test.mjs",
+    "test:structured-data": "node --test --test-isolation=none tests/product-structured-data.test.mjs",
+    "test:seo": "node --test --test-isolation=none tests/customer-seo.test.mjs"
   },
   "dependencies": {
     "next": "16.4.2",

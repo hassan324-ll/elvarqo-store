@@ -32,6 +32,7 @@ class CatalogueData
             $size = $values[$v->size_value_id];
             $balances = $stock->get($v->id, collect());
             $data = ['id' => $v->id, 'sku' => $v->sku, 'colour' => $colour, 'size' => $size, 'price_minor' => $v->price_minor, 'compare_at_minor' => $v->compare_at_minor, 'currency' => $v->currency, 'measurements' => $v->measurements, 'fit' => $v->fit, 'care' => $v->care, 'available' => $balances->sum(fn ($b) => $b->on_hand - $b->reserved), 'active' => $v->active];
+            $data += ['stock_tracked' => Availability::tracked(), 'is_in_stock' => Availability::inStock((int) $data['available'], $v->active)];
             if (! $public) {
                 $data += ['barcode' => $v->barcode, 'weight_grams' => $v->weight_grams, 'low_stock_threshold' => $v->low_stock_threshold];
             }
@@ -52,7 +53,7 @@ class CatalogueData
         $variants = self::variants($p->id, $public);
         $ids = array_column($variants, 'id');
         $media = CatalogueMedia::where('product_id', $p->id)->whereNull('archived_at')->orderBy('position')->orderBy('id')->get()->filter(fn ($m) => ! $public || ! $m->variant_id || in_array($m->variant_id, $ids))->map(fn ($m) => self::media($m, $public))->values()->all();
-        $collections = CatalogueCollection::join('catalogue_collection_product', 'catalogue_collections.id', '=', 'collection_id')->where('product_id', $p->id)->when($public, fn ($q) => $q->where('active', true)->where(fn ($g) => $g->where('kind', 'collection')->orWhereIn('parent_id', CatalogueCollection::where('kind', 'collection')->where('active', true)->select('id'))))->orderBy('catalogue_collections.position')->get(['catalogue_collections.id', 'title', 'slug', 'kind', 'active']);
+        $collections = CatalogueCollection::join('catalogue_collection_product', 'catalogue_collections.id', '=', 'collection_id')->where('product_id', $p->id)->when($public, fn ($q) => $q->where('active', true)->where(fn ($g) => $g->where('kind', 'collection')->orWhereIn('parent_id', CatalogueCollection::where('kind', 'collection')->where('active', true)->select('id'))))->orderBy('catalogue_collections.position')->get(['catalogue_collections.id', 'title', 'slug', 'kind', 'parent_id', 'active']);
         $data = ['id' => $p->id, 'title' => $p->title, 'slug' => $p->slug, 'product_type' => $p->product_type, 'description' => $p->description, 'material' => $p->material, 'fit' => $p->fit, 'care' => $p->care, 'measurements' => $p->measurements ?? [], 'seo_title' => $p->seo_title, 'seo_description' => $p->seo_description, 'collections' => $collections, 'variants' => $variants, 'media' => $media];
         if (! $public) {
             $data += ['version' => $p->version, 'status' => $p->status, 'published_at' => $p->published_at, 'updated_at' => $p->updated_at];

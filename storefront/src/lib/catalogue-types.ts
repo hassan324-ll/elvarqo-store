@@ -24,11 +24,18 @@ export type Variant = {
   compare_at_minor: number | null;
   currency: string;
   available: number;
+  stock_tracked?: boolean;
+  is_in_stock?: boolean;
   active: boolean;
   measurements: Partial<Omit<Measurements, 'size'>> | null;
   fit: string | null;
   care: string | null;
 };
+export function variantInStock(
+  variant: Pick<Variant, 'available' | 'is_in_stock'>,
+) {
+  return variant.is_in_stock ?? variant.available > 0;
+}
 export type ProductMedia = {
   id: string;
   variant_id: number | null;

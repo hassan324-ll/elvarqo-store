@@ -71,6 +71,11 @@ class Checkout
         foreach ($s['items'] as $line) {
             // Lock the same variant rows used by staff adjustments, then conditionally reserve each balance.
             DB::table('catalogue_variants')->where('id', $line['variant_id'])->lockForUpdate()->first();
+            // Immutable server-priced snapshots retain the mode for this order.
+            // Legacy snapshots without the flag keep their quantity reservations.
+            if (($line['stock_tracked'] ?? true) === false) {
+                continue;
+            }
             $remaining = $line['quantity'];
             $balances = DB::table('stock_balances as b')->join('stock_locations as l', 'l.id', '=', 'b.location_id')->where('l.active', true)->where('b.variant_id', $line['variant_id'])->orderBy('b.id')->select('b.*')->lockForUpdate()->get();
             foreach ($balances as $b) {
@@ -260,6 +265,10 @@ class Checkout
     {
         $rows = DB::table('commerce_reservations')->where('order_id', $o->id)->orderBy('balance_id')->lockForUpdate()->get();
         if (! $rows->count()) {
+            $items = $this->snapshot($o->id)['items'] ?? [];
+            if ($items && collect($items)->every(fn ($line) => ($line['stock_tracked'] ?? true) === false)) {
+                return;
+            }
             throw new \RuntimeException('Missing reservations.');
         }
         foreach ($rows as $r) {

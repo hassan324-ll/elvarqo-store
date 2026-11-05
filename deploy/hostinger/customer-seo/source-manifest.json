@@ -1,0 +1,20 @@
+{
+  "status": "Prepared locally only; not deployed. Requires review and complete Hostinger-compatible build.",
+  "files": {
+    ".gitignore": "44194481306b1d8985f2bb2f049ac5695c9eb620a804425177213e76676f84c8",
+    "storefront/.prettierignore": "d8058daf188c4e769ee478a71c95b431de95cf107cb7110c66c83e9eb62c590e",
+    "storefront/package.json": "ad287e30aab1fd8b99548133ab5d50f6ce2c5e67c4c1eed48f4a88fc1c1a702f",
+    "storefront/src/lib/collection-content.ts": "d7aa5d5701e255b0761bf52d8171a59a3db27c7d2d99875582ebef6f71618c40",
+    "storefront/src/lib/product-structured-data.ts": "167b07d4d9a4dda718305fbd3841a0ccc9800b5bbeffc36a51a605f27a7d8551",
+    "storefront/src/app/collections/[collection]/page.tsx": "2370186107396757e71afc25dd977cf3242cbe1ee4c861cd6a7ef4b88c01efbb",
+    "storefront/src/app/products/[product]/page.tsx": "2d25295537f7d9746aa647f6dc566a94bc1500e249f5d3c3aeef55624438328c",
+    "storefront/src/app/[slug]/page.tsx": "ee573b19fa0a5270b64faf4fe48feacdb7b8920655269d88004198a2ca48076f",
+    "storefront/src/components/shop/product-selection.tsx": "1d5f82b6020bbb22d291872da97965c1b2c3bcd3cc2d12ed70033f6ecac8a02b",
+    "storefront/src/components/shop/product-image.tsx": "3bcdd16b68112ecfcb040a93c8cc8397c66f9baec5a0fddfb3c0c3eb7ab56b69",
+    "storefront/src/components/checkout/bag.tsx": "c0360b1487522f20b0c2eaaa8b36c4d23fae5ba36f6df9f61c6b4c9e6e71a82c",
+    "storefront/src/app/globals.css": "dc55b6a6b6a708253ca25064ee1ebffb16902e1c8fab68803dc5f065afb4b27a",
+    "storefront/tests/customer-seo.test.mjs": "676efa150bb49ea4bef92395455985d0fcb659afc973db189725cd094180af5c",
+    "backend/app/Catalogue/CatalogueData.php": "a908898c2d67015ab6f0a71bd8729f76363615d77d4a10fa978c9c7ae00cab7d",
+    "backend/tests/Feature/PublicDiscoveryTest.php": "1829ae660ea4564e11881f48f964f0b612ed9de056f292bf95b2411905da166a"
+  }
+}

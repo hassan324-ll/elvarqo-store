@@ -9,6 +9,7 @@ type OverviewData = {
     drafts: number;
     variants: number;
     available_units: number;
+    stock_tracked?: boolean;
     recent: { id: number; title: string; status: string }[];
   };
   orders: null | {
@@ -77,8 +78,12 @@ export default function Overview() {
       ['Active variants', catalogue.variants, 'Sizes and colours'],
       [
         'Available stock',
-        catalogue.available_units,
-        'Active locations; reservations deducted',
+        catalogue.stock_tracked === false
+          ? 'In stock'
+          : catalogue.available_units,
+        catalogue.stock_tracked === false
+          ? 'Always available; quantities not counted'
+          : 'Active locations; reservations deducted',
       ],
     );
   if (orders)

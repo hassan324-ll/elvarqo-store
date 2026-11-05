@@ -1,0 +1,774 @@
+[
+  {
+    "source_archive": "images.zip",
+    "archive_sha256": "f2a75365ab4cbf011ce8db67edf074f04b384328c652cfca0fcf224b81829202",
+    "provisional_aliexpress_id": "1005010280852799",
+    "source_images": [
+      {
+        "source_file": "dsers_download_images/S671a0d1edb4a4cd8948c2153b03e1dbcp.avif",
+        "source_sha256": "1a6c779b0d6932aa0ad397c4b74b9bd7fa1995ff8ac70656a4f294c6c36111d1",
+        "webp_file": "womens-textured-v-neck-knitted-jumper/womens-textured-v-neck-knitted-jumper-01.webp",
+        "webp_sha256": "31734bfaf0c7972c8d9f6ff1b1690ab92269ecd5e98a79febca0638ab29d5930",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S3b973bfe0b2140e5b5bccc89332a9fffs.avif",
+        "source_sha256": "427429d11e4becc0ca9453128e712c027c4681ea5293b5b741778314cac93cdc",
+        "webp_file": "womens-textured-v-neck-knitted-jumper/womens-textured-v-neck-knitted-jumper-02.webp",
+        "webp_sha256": "caa04561ad6fb5db2513d61a43b9acc079ba8f524b70351301a284d3c26057ba",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sf2a91390628b4db7bf44dcec4718776en.avif",
+        "source_sha256": "eeb2c54588f69a85c61d7022fd7d2b7d11fc97a07cf43ace2682eeb57928dec1",
+        "webp_file": "womens-textured-v-neck-knitted-jumper/womens-textured-v-neck-knitted-jumper-03.webp",
+        "webp_sha256": "86e0f9d671ecdefb8fb5f1de1247081cf4753547a55375d6853472285021af7d",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sbbf8c6cdd440444788c5ff10da2dd338P.avif",
+        "source_sha256": "5a1268a5d30f6cf01040b5aa5380cff7c2ff4a031926fa77fd0c813bed5a390c",
+        "webp_file": "womens-textured-v-neck-knitted-jumper/womens-textured-v-neck-knitted-jumper-04.webp",
+        "webp_sha256": "ee2fcf58c597f2441d7b6fa2bddeaa5df9cd0c6fb44965033110c3a4d7078336",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sf5e4be2ee59d4345978864fa3a58bb9eo.avif",
+        "source_sha256": "11c90ba8e8aec4429301f17f2427fa4d24de07aabdbe0eaaf93e721af70e10a5",
+        "webp_file": "womens-textured-v-neck-knitted-jumper/womens-textured-v-neck-knitted-jumper-05.webp",
+        "webp_sha256": "3d5f4d86f553c1a2261078528ebd12f4d96ca9a535bb2ac1c2127599110be8c1",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S29d1b516c5924ecdb8cb260e6e29c7609.avif",
+        "source_sha256": "f3afe02adb16e57afb9cd53750755d2f0af7dec7ba5df4c73ce8374249b03e09",
+        "webp_file": "womens-textured-v-neck-knitted-jumper/womens-textured-v-neck-knitted-jumper-06.webp",
+        "webp_sha256": "8621d248968d23aa7192b142cd7d36bc939ce3757c9512bba023b250d160fd8b",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      }
+    ]
+  },
+  {
+    "source_archive": "images (1).zip",
+    "archive_sha256": "fefeb53434d2c1f810793f49811147d814f36fb8cfdc01a5b584fdc1ff4b11d0",
+    "provisional_aliexpress_id": "1005005987989484",
+    "source_images": [
+      {
+        "source_file": "dsers_download_images/S5d3a743bf26c4796be0a7fe3af2d22ecr.avif",
+        "source_sha256": "51c837c559561b5c43ece7d7f2f9c339b8b9dfdba812b8c6e9671eca00df29a2",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-01.webp",
+        "webp_sha256": "085b2cdf7a4c2aedbe7e012083a31ff3f001dfb6af19241dda5c8ca0c59f960a",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S215723e4867b4a0f8d4761301e8bf85aD.avif",
+        "source_sha256": "9bf4988616ad29bc1c3bdd43f3f4cd0784293f69cf87b7cee80078b699509fb9",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-02.webp",
+        "webp_sha256": "ec5c1dfdceace8af98d45205973da6f37f78cc7a9d0cf869ada1bf69ae94a3b9",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S561ca3787df94c3181388391ef6566317.avif",
+        "source_sha256": "1e779f503953ccf372da0914ab0a7911413a88835f9480a8718345a497e439ca",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-03.webp",
+        "webp_sha256": "06689b02a6bf7daea0a9cb4717bf318c2843a304f812c0c5339ee6c9a6e9e770",
+        "width": 800,
+        "height": 800,
+        "included_in_product": false,
+        "review_note": "Visible V-neck; excluded from proposed crew-neck draft. Original preserved."
+      },
+      {
+        "source_file": "dsers_download_images/S9b71c8e416d64bcda211c006c2aad3c6X.avif",
+        "source_sha256": "b94c9d08656f3f606eb7d062b68e30e73345788d94b9b260e2b7745e0f1b57d5",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-04.webp",
+        "webp_sha256": "c8c86c6e83eae06197be54a9cf5b660467b5b178613bec3bd40e80f6a19a4fdf",
+        "width": 800,
+        "height": 800,
+        "included_in_product": false,
+        "review_note": "Visible V-neck; excluded from proposed crew-neck draft. Original preserved."
+      },
+      {
+        "source_file": "dsers_download_images/S6bcb03200cb643e38bf9b3bfcebc8d28H.avif",
+        "source_sha256": "97adba853115e2f8239a3d16923ee99accf38a8558a290aec8ea8b06282031c6",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-05.webp",
+        "webp_sha256": "6f1e526f69b0adb6920c6aa390bb08ffea15f9bbd9987096832e46120ecbe651",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S993752813cda4619aea03b5d232946f0U.avif",
+        "source_sha256": "79d14bbcd2c5c5b0b29836d546a82bd2575e1b1a08757e870bfbefb6364623c9",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-06.webp",
+        "webp_sha256": "1074224bb543ff51ee00000f978e252410134b7e2e075ec89f9765cfeb3a5ed0",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S18c27a66cde2452abee9e7d756119500q.avif",
+        "source_sha256": "6939d677f03e278e9862fbdffdf0d769781b040b822fa4d55eec835d48caf653",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-07.webp",
+        "webp_sha256": "7a559a439e2cb6e6b65fe8eab1a7342f84a9bdf48dfd4c418c15ba7c81804f39",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S8019b62fb43641a0bbe6438954ae6845D.avif",
+        "source_sha256": "2ec2c7bdb3ee922f3d4abbcd580bf3d9b3f83ff30034383ae565d958743df583",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-08.webp",
+        "webp_sha256": "2d2001387fc30f60d64e16383038ab4547823c140a4dcf41fd81fc42fb7584bf",
+        "width": 800,
+        "height": 800,
+        "included_in_product": false,
+        "review_note": "Visible V-neck; excluded from proposed crew-neck draft. Original preserved."
+      },
+      {
+        "source_file": "dsers_download_images/Sc07aab2d9b9c4afba81423878a47968ck.avif",
+        "source_sha256": "2894089e01f4971defcc6b40780e950332fe3edcebac46fa9de73ca23842b663",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-09.webp",
+        "webp_sha256": "664e722958ddf1162e65b9a1bfd4acad9ef552a704ed32a9019aec501246832b",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S03cf151135e84bd2af7aa015de09e785g.avif",
+        "source_sha256": "e5c1fd006a2ee4fa27322a548ece9eafe55c65b156553d0f13fae38e267592d1",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-10.webp",
+        "webp_sha256": "657445f9895c7bf584fd752ab061236226e5a35ecac50d7bcb5d9c7e0175a2a7",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sc82910977e494c40a823e000f5903187M.avif",
+        "source_sha256": "492d6dbcbdce151dbeed9f758da69e53268a99a6ac28225321e002f6bb6b185c",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-11.webp",
+        "webp_sha256": "30ed7566eb0c66575beab015796de7b0231c90280f723e66c7f5a1fcfda0c65f",
+        "width": 800,
+        "height": 800,
+        "included_in_product": false,
+        "review_note": "Visible V-neck; excluded from proposed crew-neck draft. Original preserved."
+      },
+      {
+        "source_file": "dsers_download_images/S375861a12a774ce98499c6e9c56fd0cfU.avif",
+        "source_sha256": "58057b9ee45707aa9264ea9024c2417cbdfb84cd41fc9bf41e7da1b71fc05c45",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-12.webp",
+        "webp_sha256": "044f7ef90e791aa158854586d9097aa005dede1546ab335b6b4a36097e567d8a",
+        "width": 800,
+        "height": 800,
+        "included_in_product": false,
+        "review_note": "Visible V-neck; excluded from proposed crew-neck draft. Original preserved."
+      },
+      {
+        "source_file": "dsers_download_images/Sd4dbf26a6ff64ebd867300f7189505f1X.avif",
+        "source_sha256": "f2694f261777c7e076566ad64380108b1f2edfe5da71cc5bcb8b630bac4da703",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-13.webp",
+        "webp_sha256": "cacebe645abb043da277683657c958276ca6df40aefdfb0a632ce83d1acc8675",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S481088cdbb9349059cadb9ecc0c719c8b.avif",
+        "source_sha256": "88e56e51cfe684e95e64b352e606cbc771b7fc63ce15aa01e0a16a06a4d650de",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-14.webp",
+        "webp_sha256": "61332a1c2b55c715a97831fd43e78b5a240940c71b9874f14a0d81442997f994",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S1be28a2524c84b698262c9932ba22bd86.avif",
+        "source_sha256": "aa88c1a68996b9c9070ffe7f8583921a00f3969f1c41543237fe68dffc5928f9",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-15.webp",
+        "webp_sha256": "80ffbba0e172e06e0d80f6877ee51a6ce32fbbbe2ea6ab334b72a3276e390ed0",
+        "width": 800,
+        "height": 800,
+        "included_in_product": false,
+        "review_note": "Visible V-neck; excluded from proposed crew-neck draft. Original preserved."
+      },
+      {
+        "source_file": "dsers_download_images/S36437d4dd5354e01a86ba317e88dc2dab.avif",
+        "source_sha256": "5feca65f0ee6825921bf2ff7d71c214abbed17915d9f5fb163d8bb0b1e130326",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-16.webp",
+        "webp_sha256": "b0318d78bfe28689470600183a0d5eb7a3daeeca8f930129c60401e3e0c48c00",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Se25baec55722427a82405c1462ee50942.avif",
+        "source_sha256": "a7159888cb94a27d224d4511f64139d55c71fc5853d8bd29ee6f1561b0020a29",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-17.webp",
+        "webp_sha256": "65a2cc7fbaccd5ecb58e761443f64302184ec5d7406ce9c72f506a8f8a7bc01e",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S81ad6a371e984beea95b95b99434021fM.avif",
+        "source_sha256": "ee37de41e8fc18b3c62f22256a17809078d3bbe6e05fbdad02f4abd85a45ae8e",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-18.webp",
+        "webp_sha256": "af580e17fed5a744b7e64c6c370a024394d10e2a02a76f0cabf98b3050e04bae",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sde118e931cfa432581380356850c7b45H.avif",
+        "source_sha256": "f594ad96bd57bc8f823bfed0ec8c2660fdb44cf530a3dbe58750f3a9a261ef17",
+        "webp_file": "womens-crew-neck-knitted-jumper/womens-crew-neck-knitted-jumper-19.webp",
+        "webp_sha256": "e73ed0516ee4d76a8ff4d326245be84f4d94970e00d95c9518e5aed63b74f449",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      }
+    ]
+  },
+  {
+    "source_archive": "images (2).zip",
+    "archive_sha256": "175b038b8e1b45d5d2ef62e8d8f7fc157f0f6f29868d342214c970955403e018",
+    "provisional_aliexpress_id": "1005007485397595",
+    "source_images": [
+      {
+        "source_file": "dsers_download_images/Se6c3e0d2cb2448da91f99a404b4f85deR.avif",
+        "source_sha256": "f724ae641c96703fbe5fae1d2c77bc72ea3fcaf7eedb9b9fb384c280df6a4a0c",
+        "webp_file": "womens-high-neck-knitted-jumper/womens-high-neck-knitted-jumper-01.webp",
+        "webp_sha256": "ad4b33b642acdb67c7ec307a337a2d38a2f18c5177cc71617ea4cb9783db424b",
+        "width": 750,
+        "height": 1000,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S3e384e8d7980485bba5235a6a22710dd6.avif",
+        "source_sha256": "4afc3fe8cc38a76ec0fc1b3f9b176354d6e4dc8ecfe82f3c25d04410c6e6f9ee",
+        "webp_file": "womens-high-neck-knitted-jumper/womens-high-neck-knitted-jumper-02.webp",
+        "webp_sha256": "e3dc14f4931bbdfd42ee4191842cee6d5b2dc804df7baf5f2433db905e115566",
+        "width": 750,
+        "height": 1000,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sfe8db37adf22463cac2f08c373b26dadc.avif",
+        "source_sha256": "a98c3b1d892a9aa082d114cccdb29bcf1fd6e4ee9636d0e6646f9e0653ba470e",
+        "webp_file": "womens-high-neck-knitted-jumper/womens-high-neck-knitted-jumper-03.webp",
+        "webp_sha256": "922afbcfb7b44d948c2860a4e790bb51262ab854997628a58eaa645289487b3b",
+        "width": 750,
+        "height": 1000,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S891ffd2734ad47d3b17922d81c6ba199L.avif",
+        "source_sha256": "d057ef621eb241488110663b4c0908df5e78edf5aa30f6e1590fb377314c6acc",
+        "webp_file": "womens-high-neck-knitted-jumper/womens-high-neck-knitted-jumper-04.webp",
+        "webp_sha256": "2a568db207c66d754d797252805d7c515a3e1cc90f9561f2f4c81c557e7053da",
+        "width": 750,
+        "height": 1000,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S177d36a6e15a47b0992bcd1105630d68P.avif",
+        "source_sha256": "f9a2994c7dc2d4face3fc7185f2dae01249a897b329ff04438c429dacb23e77b",
+        "webp_file": "womens-high-neck-knitted-jumper/womens-high-neck-knitted-jumper-05.webp",
+        "webp_sha256": "5fd8bb5be7b585ab4cc5be02c350f9b172ec8f04ae1293f8be1b2f2ee3f5d1a7",
+        "width": 750,
+        "height": 1000,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Se96c6f1f6ef84a81b28918be509b66f3M.avif",
+        "source_sha256": "f4382d0e639ce9d404a78da77df21c81d6c1be85de1d2ab8847f6ca745a682d4",
+        "webp_file": "womens-high-neck-knitted-jumper/womens-high-neck-knitted-jumper-06.webp",
+        "webp_sha256": "c5e0646753d5c64a3b2abb5611ea9e5f5c00eee157cddbc498585e27be8beb32",
+        "width": 750,
+        "height": 1000,
+        "included_in_product": true,
+        "review_note": null
+      }
+    ]
+  },
+  {
+    "source_archive": "images (3).zip",
+    "archive_sha256": "1f5abc930b8dcaf2157d9030988c81ac281bf40a79a6eded6f1259dce827c7d9",
+    "provisional_aliexpress_id": "1005013065281803",
+    "source_images": [
+      {
+        "source_file": "dsers_download_images/S7a17dee6bcfe4084bb67d80a20cd94812.avif",
+        "source_sha256": "02d32b8cf662b2ded5af5603b59349e7a7dcab9a1ef71059d1883ec9a765815c",
+        "webp_file": "womens-collared-knitted-jumper/womens-collared-knitted-jumper-01.webp",
+        "webp_sha256": "aedcbd4c1ce12fdff6e81fe7b7c98b15f1d3270f0d13014470309e8983fc41b8",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sd26894c3710b4bec99d3b04632f9f247R.avif",
+        "source_sha256": "d0aa1025de199872d1640d8dbae0b2eaa0328caf6ced86f68edfaaaaeb37c6b9",
+        "webp_file": "womens-collared-knitted-jumper/womens-collared-knitted-jumper-02.webp",
+        "webp_sha256": "29fc810fa8746e2725af60a4240d162a9539e70c2a48ae7be5ca9f3c63dd6fba",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S2f81b527172b401291abba3851ba68aci.avif",
+        "source_sha256": "3df2699c55cb96d607ec8815e6b67b94020902abff3bf5eb4949ad7f995031a4",
+        "webp_file": "womens-collared-knitted-jumper/womens-collared-knitted-jumper-03.webp",
+        "webp_sha256": "9846850d3e02245df7f6e945fc14100856281a0ab6d80076a3993bcb1de8562a",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S15ab1032793e43e2ba314c4dbf70aaafu.avif",
+        "source_sha256": "721e9ef2294ce4b2bca6263388f66e609d8a5740a7d96a41ca76b28284570b96",
+        "webp_file": "womens-collared-knitted-jumper/womens-collared-knitted-jumper-04.webp",
+        "webp_sha256": "b2ddf808921425f7aa3ed9212b4ae024726be935f825afb9af8befc611fd6f73",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S81c31a3582f54f28bed5bceb15c5eb3dn.avif",
+        "source_sha256": "29b427abaa81f5afdba1bd25d38a5ae464a8c71ed191c50c356d400b20400657",
+        "webp_file": "womens-collared-knitted-jumper/womens-collared-knitted-jumper-05.webp",
+        "webp_sha256": "9826a0d3db4a31754b191f7fc259d742a57e82f7b8158174d771465311472ce5",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S565795ab303c4f16969f5316bff33a02F.avif",
+        "source_sha256": "0e464f6b06faf40c825f0c512b93c1634c6927477b63ade4a1ef2660723c0d24",
+        "webp_file": "womens-collared-knitted-jumper/womens-collared-knitted-jumper-06.webp",
+        "webp_sha256": "f6889cf85c342f0f6968d77db60e0e39d667a862bb1485b00e317f498a3d64f3",
+        "width": 750,
+        "height": 854,
+        "included_in_product": true,
+        "review_note": null
+      }
+    ]
+  },
+  {
+    "source_archive": "images (4).zip",
+    "archive_sha256": "79f567c3e9f3a73db7c28a59e0ba2e90c6edc0dcfc8d7c7f6901d6c8a2a3eb4e",
+    "provisional_aliexpress_id": "1005004923772089",
+    "source_images": [
+      {
+        "source_file": "dsers_download_images/S9a1c953791d4435aa9f835be7596fb94k.avif",
+        "source_sha256": "5a7329b6617312bbf84a1efa4ca7f7b544918a7cec3ba8135bd24e034dfaa227",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-01.webp",
+        "webp_sha256": "a947650bb26bf739c0efca5fbd8f4e34662d6e29f4bb4cce37b1973d07acda0f",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sf65c2c88a5db4a069401d47a595e769eY.avif",
+        "source_sha256": "3df9ae7de9137295efc3801ebf4f849ab1cd218cc35ffcf429f2bac6dcf551aa",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-02.webp",
+        "webp_sha256": "e58f6f78f93f95637b56ecfb76077dc1cdd76a12b27eb67c2bc31a881f4cb3f2",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S5a0c7905eb37401c8485ac85369ad933G.avif",
+        "source_sha256": "d2ec6523047c12623caf130193796266b04cf56c689ace129f154a53fc9e6bf3",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-03.webp",
+        "webp_sha256": "04ad6f1b3b4f07c09f8c29b28863ff8b9a1560388ce471341a545b2884f3f24b",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Scad9734fca544d99a3dec6050b84bac1p.avif",
+        "source_sha256": "f438b6d4453e5f168cab199c66aa76a459bdd5422f888f07af3a6b4155e7356c",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-04.webp",
+        "webp_sha256": "10400049a6022e969d41283f60dcd21da3ed23b2b7ba3eab019d398863ea95c5",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sdf65a1a04f2547d4bc5547c49a7ef297A.avif",
+        "source_sha256": "6bb72fdbfd0822e28ac98bc8dc42708e9a10ae52622f0de5363935b02f087206",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-05.webp",
+        "webp_sha256": "612c87d78caabf3135608594998f09c8ab64f52f65a063c56bf26ca6dc560dc5",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S3bee92bb168f4c0d80a4e50bd2d0c6d2a.avif",
+        "source_sha256": "550fc3460ddf0804c511dac70d1892b6f723e0cc8b479f1943e004eeebc83868",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-06.webp",
+        "webp_sha256": "bbd2070c4872ead3f0d319641bd376fa00463cbe83b72a83cce7bbdcf7bd4aeb",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sc7a5a2646e264573a8acecb75d15d291d.avif",
+        "source_sha256": "56f5edf35bac2db37c34ee2e66e3970e28096d4171abd94209a9c5e43062936a",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-07.webp",
+        "webp_sha256": "a008c60317f9d55eeabb360195ebe27d05bcf365321c878c1eb2e00bc28b9f31",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S5784ed0a65134521a3d256ed4e26656bT.avif",
+        "source_sha256": "2d0fa27f2335a816788ce4edc30c076c1099af4e34f99aa912491f37448b3742",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-08.webp",
+        "webp_sha256": "495faf67dfdbdaa38889e0a4b056fb55cdc74fbdaec34b31dee706cdc7c3070b",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S90624bf0d4e94abe9f7df771709c2c00v.avif",
+        "source_sha256": "cdcdecb7545dbf0cc5aac897c956a5006e927620407478b3449ade87992009a9",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-09.webp",
+        "webp_sha256": "1c91bdc769a3e2fcda3c49af7846440a14c4ccb69986706951d70781f8b7e5e8",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S643838fea92247f6be8913cc68731b4cF.avif",
+        "source_sha256": "3eb605b63e97f8573260fcb539bdbc728d828329bbb1e31bd6f423ffa18109d6",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-10.webp",
+        "webp_sha256": "c3dc254a69ac8a6634b540c6f814418fc0f29ac7f2ad7b35f5aaa03ad9070e4a",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S9bb5efd8f7654c999f41bd69c276ff5dn.avif",
+        "source_sha256": "543d4dc3ebc6f179556de445179c88226a60ccb17502327cc4b65e604a330b41",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-11.webp",
+        "webp_sha256": "980030b1a646250d05bf5649b573cb532be5d8f2c6b016110142b5c34727dc2b",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sd11790c53a764754b0eed31d882a9479h.avif",
+        "source_sha256": "0a0ca25fbabd7e833c68db21bfed46513bf6eec93fcb1ea854880c113e845420",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-12.webp",
+        "webp_sha256": "487651da5d23cfdfb536c74f405c20834f1bb36f7a9803f41ba2c4b70034dfbb",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S801b43c927b34e74967cbdb4cb1b537aJ.avif",
+        "source_sha256": "e77b18d8e25c6972d1bab23f158dae4a2257a2a295fbedb5cdd0ef64fc60d262",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-13.webp",
+        "webp_sha256": "070c2a4461d3a937d7f63e4075c416c1f452d6dcbafc1a3cfa926e184328554b",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sac10bc0f5f6642edb06a85fdfbc10104H.avif",
+        "source_sha256": "e89454d663346edd24587117db2a03378ab8c7c770806f59c0dd741dcd929352",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-14.webp",
+        "webp_sha256": "c32ae4b84a16c145c05902e41b1a5b90273717b28e81bd32d96aed90de530d35",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S2f9353fae86345eeb2f0c59308b78324S.avif",
+        "source_sha256": "91a5349ebdf2ab429bfbb17e27fed07f1fc4c80647ee097cc89fa111d395c59c",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-15.webp",
+        "webp_sha256": "551b0ab3dd665da5dea321e34c1ba104c095a72703f8f636f0539894f491eaa6",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S2cafa2f4deaa4a87b77284b55acbbae90.avif",
+        "source_sha256": "428329debeb5785dd6cd6d66e544770b4418367628febdbb0f2ede8bc5b971d8",
+        "webp_file": "womens-v-neck-knitted-jumper/womens-v-neck-knitted-jumper-16.webp",
+        "webp_sha256": "e81d04b348b672b5d0982de5540ad7f68d93a6e818596fb2755748a984c89947",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      }
+    ]
+  },
+  {
+    "source_archive": "images (5).zip",
+    "archive_sha256": "d5704b8b873d1fcccac214e43ba91b41b4150e817ff9f6fc24d5ded1dd2237b4",
+    "provisional_aliexpress_id": "1005005801731861",
+    "source_images": [
+      {
+        "source_file": "dsers_download_images/Seeac8c4bcb144df5a69d417cec38da87b.avif",
+        "source_sha256": "8a0848d66975eed0b7a299b029125e25638cf1f810496cc8ce45496a580c5625",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-01.webp",
+        "webp_sha256": "64495f8c0357b0854ecd715d7eb826ec0b61e68af185e5973d676d356e42a6ef",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S18383165cc064e7488ed9761b12d399cn.avif",
+        "source_sha256": "ba6103fdf9c3b436f8b5ac2941a18a1251604c5eef8c487e4b68c3584d5a78a7",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-02.webp",
+        "webp_sha256": "43f32eaf6f0905dfe9c8db94e37a55850abc7a11dbec6ed8232e17a4f962800a",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sf04af7d4e5404aa9abf4e572f2fdeadeQ.avif",
+        "source_sha256": "356187f95e9204cfcb6e959d4bdb1853a040661b7e2c7878b66449b5e6408cfb",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-03.webp",
+        "webp_sha256": "4048c472b5ee15c39e9a7bed26168f8c175c410b60be19773c988d48e14d3193",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sab9dc974086c4d87951fcac24ef0de313.avif",
+        "source_sha256": "e22deaad6cccb841654c7502c844cef51e8880970a80c1a5b3775d2ed7959c9d",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-04.webp",
+        "webp_sha256": "2d8cab3e3abeebf5b8c8b416d234cac0236cc09313ba32a41f48eadc80bff1d6",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S358560445c394202b9eb780b997fdd87r.avif",
+        "source_sha256": "5d410ba92d90428af2694b0cb9bccfc8d1e9e9f0b872d8fec5b8779c262842b0",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-05.webp",
+        "webp_sha256": "48e1a84ecb1f9dec1a02f96c7d049e915d2a06775bcd81057f8accf67a8f3d28",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S235521861db640f78166813441901008I.avif",
+        "source_sha256": "12f725c92ed15524ec86f7a0d33e258e9d7c4dad0266dacd8831983b8feb3e84",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-06.webp",
+        "webp_sha256": "e927ec4dc5c13d229e329e88711f5ed8bda34c7739ed279cf9e797c4e718904d",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sd95f83f6bd604734a3ac6994a45e74155.avif",
+        "source_sha256": "e22deaad6cccb841654c7502c844cef51e8880970a80c1a5b3775d2ed7959c9d",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-07.webp",
+        "webp_sha256": "2d8cab3e3abeebf5b8c8b416d234cac0236cc09313ba32a41f48eadc80bff1d6",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sb452de5a41b54ce886a2704480ecc587q.avif",
+        "source_sha256": "5d410ba92d90428af2694b0cb9bccfc8d1e9e9f0b872d8fec5b8779c262842b0",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-08.webp",
+        "webp_sha256": "48e1a84ecb1f9dec1a02f96c7d049e915d2a06775bcd81057f8accf67a8f3d28",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S24c1ed83ea174115ad40d80a1cb51459j.avif",
+        "source_sha256": "ba6103fdf9c3b436f8b5ac2941a18a1251604c5eef8c487e4b68c3584d5a78a7",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-09.webp",
+        "webp_sha256": "43f32eaf6f0905dfe9c8db94e37a55850abc7a11dbec6ed8232e17a4f962800a",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sfcdb1a78a4e0448cb6f6310177da6233h.avif",
+        "source_sha256": "eb74abb7354d7eedf57061700a50eded11b2894a73facb9fe176ec3d4aebfd17",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-10.webp",
+        "webp_sha256": "1dd08a45f0194dd84e4a13f393ad9e5651084db5a7f1dbad35036b511489c731",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sa4d43002c15c4cecab7198c787e876b6a.avif",
+        "source_sha256": "12f725c92ed15524ec86f7a0d33e258e9d7c4dad0266dacd8831983b8feb3e84",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-11.webp",
+        "webp_sha256": "e927ec4dc5c13d229e329e88711f5ed8bda34c7739ed279cf9e797c4e718904d",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S5e3a3bb37b894e5e9f8831d06585880eh.avif",
+        "source_sha256": "94f670a948559dc710f156ced263e7788f75bd97e55c4a793268978d86ee4d20",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-12.webp",
+        "webp_sha256": "8d84946abaace4029755504336a35fa2f71e5b6623cd8fc7487275e996aed2af",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sf0b326734f8d469e8be065ae760299f3G.avif",
+        "source_sha256": "b70f2071777bd664168ca79c6c4d6066ef4b84b09efeeb447ba6d0ea97021632",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-13.webp",
+        "webp_sha256": "8993bff5a163ad1f6bcb591a38398b37b3cb1d959a379be88bb3ca7a3e5d74e6",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S1c3cdf5f580347dc82ff08e657757456g.avif",
+        "source_sha256": "329b604861c0231ce8817b313923fe447c1c69f0eabce87456ac2279b76695cf",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-14.webp",
+        "webp_sha256": "70232cadd6bbbcae025b344a57f7e94145778ff9436c9e846508e342ab493bf7",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Saa8e9e12ff3e41ecb4423606e0f0e8b8Z.avif",
+        "source_sha256": "f833221a977e6062c7a5c7d4e9b0f44aebc27e7d35034f2b742cbbe99387b526",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-15.webp",
+        "webp_sha256": "a4c51ac2e682b8b020dddde3dec9fa69c84379b55ff51ced2932d7cd2477d054",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S211321ea7dcd456fac08aa6ec1b42508K.avif",
+        "source_sha256": "95beeb21bb5e82c3719332980d4c3b9de5d13ba3f961691bf9a27aadcd216480",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-16.webp",
+        "webp_sha256": "eecbaf117dd353da722b779f4d50d5aefda3049f510004c0acd606997954a9ad",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/S33b775e869d3499690d38062a7474a59i.avif",
+        "source_sha256": "45d3a2095619f1f2309f966d4c2ee8e91da35b7242604f178ea5720ed7b3e9ad",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-17.webp",
+        "webp_sha256": "92193bf3160562dffcf10586324d8de32a474ae2e012e9735d982ef0b7556d37",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sddff8dc1338b47c7b3f879ccf3dd40aal.avif",
+        "source_sha256": "356187f95e9204cfcb6e959d4bdb1853a040661b7e2c7878b66449b5e6408cfb",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-18.webp",
+        "webp_sha256": "4048c472b5ee15c39e9a7bed26168f8c175c410b60be19773c988d48e14d3193",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sed7fd93cbb58403db4e61c4a02eb00a2c.avif",
+        "source_sha256": "8a0848d66975eed0b7a299b029125e25638cf1f810496cc8ce45496a580c5625",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-19.webp",
+        "webp_sha256": "64495f8c0357b0854ecd715d7eb826ec0b61e68af185e5973d676d356e42a6ef",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      },
+      {
+        "source_file": "dsers_download_images/Sd183a69b3674496ab8380304c9872adaf.avif",
+        "source_sha256": "a71b635ae066b8bfd0cc35166c542b6d63656ac3de7d40563bd6ffbf65563e7f",
+        "webp_file": "womens-roll-neck-knitted-jumper/womens-roll-neck-knitted-jumper-20.webp",
+        "webp_sha256": "2bde55195eb59c3590ce05b1a7c5a778085177a8fcecf2df764e5407c987d7bb",
+        "width": 800,
+        "height": 800,
+        "included_in_product": true,
+        "review_note": null
+      }
+    ]
+  }
+]

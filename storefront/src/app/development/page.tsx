@@ -1,5 +1,8 @@
 import HealthCheck from '../health-check';
-export const metadata = { title: 'Development connection' };
+export const metadata = {
+  robots: { index: false, follow: false },
+  title: 'Development connection',
+};
 export default function Page() {
   return (
     <div className="store-section">

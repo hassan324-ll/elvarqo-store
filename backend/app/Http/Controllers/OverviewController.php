@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Catalogue\Availability;
 use App\Catalogue\CatalogueData;
 use App\Models\CatalogueProduct;
 use Illuminate\Support\Facades\DB;
@@ -19,6 +20,7 @@ class OverviewController extends Controller
             $balances = (clone $variants)->join('stock_balances as b', 'b.variant_id', '=', 'v.id')
                 ->join('stock_locations as l', 'l.id', '=', 'b.location_id')->where('l.active', true);
             $data['catalogue'] = [
+                'stock_tracked' => Availability::tracked(),
                 'products' => (clone $products)->count(),
                 'published' => (clone $products)->where('status', 'published')->count(),
                 'drafts' => (clone $products)->where('status', 'draft')->count(),

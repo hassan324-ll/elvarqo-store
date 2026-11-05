@@ -2,7 +2,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Button, Modal } from '../../ui/components';
-import { type Product, money, loadSaved } from '../../lib/catalogue-types';
+import {
+  type Product,
+  money,
+  loadSaved,
+  variantInStock,
+} from '../../lib/catalogue-types';
 import { SavePiece } from './wishlist';
 import ProductImage from './product-image';
 import { useBag } from '../checkout/bag-provider';
@@ -101,7 +106,7 @@ export default function ProductSelection({
     const p = await refresh();
     if (!p) return;
     const v = p.variants.find((v) => v.colour === colour && v.size === size);
-    if (!v || v.available < 1) {
+    if (!v || !variantInStock(v)) {
       setError('This choice is unavailable. Choose another size or colour.');
       return;
     }
@@ -147,7 +152,12 @@ export default function ProductSelection({
       ...v.measurements,
       size: v.size,
       id: v.id,
-    }));
+    }))
+    .filter((row) =>
+      (['chest_cm', 'length_cm', 'shoulder_cm'] as const).some(
+        (key) => Number(row[key]) > 0,
+      ),
+    );
   return (
     <>
       <div
@@ -157,7 +167,12 @@ export default function ProductSelection({
           className="product-gallery"
           aria-label={`${product.title} gallery`}
         >
-          <ProductImage key={main?.id || 'missing'} media={main} priority />
+          <ProductImage
+            key={main?.id || 'missing'}
+            media={main}
+            priority
+            sizes="(max-width: 767px) 90vw, (max-width: 1100px) 45vw, 640px"
+          />
           {gallery.length > 1 && (
             <div
               className="gallery-thumbnails"
@@ -226,7 +241,7 @@ export default function ProductSelection({
                 );
                 return (
                   <label
-                    className={`variant-option ${!v || v.available < 1 ? 'unavailable-option' : ''}`}
+                    className={`variant-option ${!v || !variantInStock(v) ? 'unavailable-option' : ''}`}
                     key={s}
                   >
                     <input
@@ -245,7 +260,7 @@ export default function ProductSelection({
                       {s}
                       {!v
                         ? ' — not offered'
-                        : v.available < 1
+                        : !variantInStock(v)
                           ? ' — sold out'
                           : ''}
                     </span>
@@ -254,20 +269,22 @@ export default function ProductSelection({
               })}
             </div>
           </fieldset>
-          <button
-            className="text-link size-guide-trigger"
-            type="button"
-            onClick={() => setGuide(true)}
-          >
-            Size guide
-          </button>
+          {measurementRows.length > 0 && (
+            <button
+              className="text-link size-guide-trigger"
+              type="button"
+              onClick={() => setGuide(true)}
+            >
+              Size guide
+            </button>
+          )}
           <p className="selection-status" role="status" aria-live="polite">
             {state === 'checking'
               ? 'Checking current price and availability…'
               : state === 'failed'
                 ? 'Availability could not be verified. Refresh before reviewing a selection.'
                 : selected
-                  ? selected.available > 0
+                  ? variantInStock(selected)
                     ? `${selected.colour} / ${selected.size} · In stock`
                     : 'This size is sold out. Choose another size or colour.'
                   : size
@@ -291,7 +308,7 @@ export default function ProductSelection({
             <Button
               disabled={
                 !selected ||
-                selected.available < 1 ||
+                !variantInStock(selected) ||
                 state !== 'current' ||
                 adding
               }
@@ -314,24 +331,44 @@ export default function ProductSelection({
           )}
           {!compact && (
             <div className="product-accordions">
-              <details open>
-                <summary>Material & construction</summary>
-                <p>{product.material}</p>
+              <details>
+                <summary>Fabric & construction</summary>
+                <p>
+                  {product.material?.trim() ||
+                    'Composition details are not available.'}
+                </p>
               </details>
-              <details open>
+              <details>
                 <summary>Fit & measurements</summary>
-                <p>{selected?.fit || product.fit}</p>
-                <button
-                  type="button"
-                  className="text-link"
-                  onClick={() => setGuide(true)}
-                >
-                  View garment measurements
-                </button>
+                <p>
+                  {(selected?.fit || product.fit)?.trim() ||
+                    'Fit details are not available.'}
+                </p>
+                {measurementRows.length > 0 ? (
+                  <button
+                    type="button"
+                    className="text-link"
+                    onClick={() => setGuide(true)}
+                  >
+                    View garment measurements
+                  </button>
+                ) : (
+                  <p>Size measurements are not available for this item.</p>
+                )}
               </details>
-              <details open>
+              <details>
                 <summary>Care instructions</summary>
-                <p>{selected?.care || product.care}</p>
+                <p>
+                  {(selected?.care || product.care)?.trim() ||
+                    'Care details are not available.'}
+                </p>
+              </details>
+              <details>
+                <summary>Delivery & returns</summary>
+                <p>Delivery and returns information is not yet available.</p>
+                <Link href="/delivery-returns" className="text-link">
+                  Delivery & returns
+                </Link>
               </details>
             </div>
           )}

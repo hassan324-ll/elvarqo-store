@@ -1,0 +1,4763 @@
+{
+  "checked_utc": "2026-11-05T07:44:09Z",
+  "scope": "Read-only live audit before local fixes; no deployment performed",
+  "pages_checked": 92,
+  "images_checked": 67,
+  "images": [
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/025eeaf0-b1e5-4486-aa5e-5035b4bfe3a9/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/0accc590-65d2-4836-8d5a-4d31b48b1f22/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/11c9e5d3-73a5-44ee-a3df-1d490cdf7f64/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/16be2337-46e5-4244-8886-d45aa9543c10/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/16f47a4f-c4c8-4504-b30e-9448ea55002d/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/1f6f0be0-8025-44af-8a28-245987e171b1/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/21b05670-2c5f-4bad-8a5c-2d63af18376c/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/23063f00-1306-4c13-a296-779cf815821b/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/23ca8860-0eba-4c4b-b098-f866540c52c3/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/24c2a693-9c1d-4d3f-9c60-50febcf2de19/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/2811827a-00c1-462d-a744-cd0242c3a1d9/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/2a7a5c8e-bec9-4924-914c-626cab281c5e/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/2da4e8aa-4bbc-4014-86c7-6f34402a9965/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/2ffdbd96-a517-4389-b6b2-6d99e0f60672/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/31858cdb-2574-4153-b935-c760e0533a96/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/36530299-56a5-4199-bf7f-9d7699ac1c4e/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/3719d5e2-b6b2-49a1-a301-a26023367963/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/397f2f96-8f5e-4b1f-bf88-0f26da39d643/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/3ab2bae4-fe58-417c-a2dd-1a81edea869d/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/3c897e41-448e-4b2e-9410-46d84ba7886e/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/3faf4977-ddb0-4f6f-8a41-856e07b555dd/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/43f8bbcf-9fff-40ab-9a12-3d07931c8543/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/4d1137ed-645e-4ac5-b4a9-ce12d8597114/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/4d824dc5-cffb-48bf-ad06-2485fbdb4c51/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/4e35c7ec-69aa-4867-852c-0182d4ab72f6/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/5b7df518-658d-43e8-af5b-53089d703b52/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/657c27aa-ef37-4e58-b0f7-84efbe4c24f3/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/6b49e7e1-2c74-4abb-9c1e-f66b3ca7c116/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/70ae9e5e-5fa1-4e07-9d6a-9765e528dcd4/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/70d68583-273d-4a73-a5af-5d03c0c86953/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/7329b574-d5a0-44a8-9801-d52a25cc255e/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/79a30c55-7c69-4b5c-a9b0-8c61a23803cd/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/7de5ff74-c06e-44a7-afdc-b060d6ed62be/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/81b64711-bec5-48af-a43d-3482b0a82276/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/8365725f-7ffc-4cee-a102-c5276f1ce4c5/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/86419a70-bd83-404e-862c-e1529efec5b1/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/8643765d-fd20-4655-9db1-7e64f94fa193/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/8a51546f-e97e-4764-bd4e-2899ce8954a1/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/8c409c85-2e44-48a3-9c1b-579046405da2/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/908478dc-dc68-4a90-a2fd-3a7643906b94/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/90d2715b-fed8-401c-80f2-0778e2ece3a3/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/92c2f639-14af-4b61-a55d-d02b7ecb6b5a/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/a018968f-1828-4402-b3e3-82de1cd890d4/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/a3220c13-d32e-4a6e-8981-b73b7b776c28/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/a5fc4966-28ee-4fff-8a4c-1b77c8c35089/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/ace198d8-3b83-41fd-8e06-fe40474b49b2/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/ad770459-4690-4643-97c3-95d049b60605/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/b837e02a-b023-492b-a148-0875ec50452f/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/ba177236-5a8b-4fb7-8181-4db136deeb74/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/beafa69b-ac31-49cc-8f8f-ff1b435bd99b/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/c4ecc1f4-492f-47da-be72-eb10d8ba484a/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/c575b918-e347-44de-a9d3-a2a88db10563/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/ca823931-9273-493d-ab91-e6dd7e437307/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/cd9f9736-0326-4ea9-845b-484507eec896/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/d18a19f4-aa80-4597-837a-903ad0d006c9/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/d6f59855-6451-4a2a-98e8-efecc97a3a92/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/d74eaa3b-2420-4d83-89d9-1806cd2ffc8c/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/dbe95a82-4ca8-4050-b5d7-ce84052c0d92/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/dc15872d-923a-4a01-95dd-990730464ef4/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/dfd0c2d6-a70d-4393-bbdc-429e88fd3d87/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/e2520cfc-88aa-4312-8553-4624d4160262/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/e51ad74f-d887-42c7-89cf-b4a2e7d0b426/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/e594c51c-ddac-49a1-b780-4f00c1af9e8a/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/f247b33e-4907-4b11-8cae-ad7dc201250b/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/f4046560-5835-4aac-8419-b002f32899fa/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/f98f27d7-aa6a-4fbc-b2f6-9976e5459bab/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    },
+    {
+      "url": "https://api.elvarqo.uk/api/v1/catalogue/media/fdaa283a-efb1-44b6-943a-36e9521891de/1280",
+      "status": 200,
+      "type": "image/webp",
+      "robots": "index, follow"
+    }
+  ],
+  "pages": {
+    "https://elvarqo.uk/": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "index, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Less effort.More presence."
+        ],
+        [
+          "h2",
+          "Built around your day."
+        ],
+        [
+          "h3",
+          "Women"
+        ],
+        [
+          "h2",
+          "The everyday essentials"
+        ],
+        [
+          "h3",
+          "Women's Textured V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Crew Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's High Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Collared Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Roll Neck Knitted Jumper"
+        ],
+        [
+          "h2",
+          "Wear it often.Make it yours."
+        ],
+        [
+          "h2",
+          "A little more considered."
+        ],
+        [
+          "h2",
+          "The ELVARQO letter"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/shop": {
+      "status": 200,
+      "title": "Shop the collection | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "index, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/shop"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Everyday essentials"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h3",
+          "Women's Textured V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Crew Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's High Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Collared Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Roll Neck Knitted Jumper"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections": {
+      "status": 200,
+      "title": "The collections | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "index, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "The collections"
+        ],
+        [
+          "h2",
+          "Women"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/women": {
+      "status": 200,
+      "title": "Women | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "index, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/women"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "A seasonof possibility."
+        ],
+        [
+          "h2",
+          "Shop by category"
+        ],
+        [
+          "h2",
+          "Trending now"
+        ],
+        [
+          "h2",
+          "Your wardrobe, refreshed"
+        ],
+        [
+          "h2",
+          "The finishing touches"
+        ],
+        [
+          "h3",
+          "Boots"
+        ],
+        [
+          "h3",
+          "Lingerie"
+        ],
+        [
+          "h3",
+          "Pyjamas"
+        ],
+        [
+          "h2",
+          "Considered style,every day."
+        ],
+        [
+          "h2",
+          "New arrivals"
+        ],
+        [
+          "h3",
+          "Women's Textured V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Crew Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's High Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Collared Knitted Jumper"
+        ],
+        [
+          "h2",
+          "Shop the collection"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h3",
+          "Women's Textured V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Crew Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's High Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Collared Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Roll Neck Knitted Jumper"
+        ],
+        [
+          "h2",
+          "A little more considered."
+        ],
+        [
+          "h2",
+          "The ELVARQO letter"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-knitwear": {
+      "status": 200,
+      "title": "Knitwear | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "index, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-knitwear"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Knitwear"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h3",
+          "Women's Textured V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Crew Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's High Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Collared Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's V-Neck Knitted Jumper"
+        ],
+        [
+          "h3",
+          "Women's Roll Neck Knitted Jumper"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper": {
+      "status": 200,
+      "title": "Women's Textured V-Neck Knitted Jumper | ELVARQO",
+      "meta": {
+        "": "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "A V-neck knitted jumper with long sleeves. The supplied photographs show vertical textured panels and ribbed cuffs and hem.",
+        "robots": "index, follow",
+        "twitter:card": "summary",
+        "twitter:title": "Women's Textured V-Neck Knitted Jumper | ELVARQO",
+        "twitter:description": "A V-neck knitted jumper with long sleeves. The supplied photographs show vertical textured panels and ribbed cuffs and hem."
+      },
+      "canonical": [
+        "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Women's Textured V-Neck Knitted Jumper"
+        ],
+        [
+          "h2",
+          "Find your fit"
+        ],
+        [
+          "h2",
+          "Added to your bag"
+        ]
+      ],
+      "schema_count": 1
+    },
+    "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper": {
+      "status": 200,
+      "title": "Women's Crew Neck Knitted Jumper | ELVARQO",
+      "meta": {
+        "": "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "A knitted jumper with a round neckline and long sleeves. The selected photographs show ribbed edging at the neckline, cuffs and hem.",
+        "robots": "index, follow",
+        "twitter:card": "summary",
+        "twitter:title": "Women's Crew Neck Knitted Jumper | ELVARQO",
+        "twitter:description": "A knitted jumper with a round neckline and long sleeves. The selected photographs show ribbed edging at the neckline, cuffs and hem."
+      },
+      "canonical": [
+        "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Women's Crew Neck Knitted Jumper"
+        ],
+        [
+          "h2",
+          "Find your fit"
+        ],
+        [
+          "h2",
+          "Added to your bag"
+        ]
+      ],
+      "schema_count": 1
+    },
+    "https://elvarqo.uk/products/womens-high-neck-knitted-jumper": {
+      "status": 200,
+      "title": "Women's High Neck Knitted Jumper | ELVARQO",
+      "meta": {
+        "": "https://elvarqo.uk/products/womens-high-neck-knitted-jumper",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "A plain knitted jumper with long sleeves and a high neckline. Ribbed detailing is visible at the cuffs and hem in the supplied photographs.",
+        "robots": "index, follow",
+        "twitter:card": "summary",
+        "twitter:title": "Women's High Neck Knitted Jumper | ELVARQO",
+        "twitter:description": "A plain knitted jumper with long sleeves and a high neckline. Ribbed detailing is visible at the cuffs and hem in the supplied photographs."
+      },
+      "canonical": [
+        "https://elvarqo.uk/products/womens-high-neck-knitted-jumper"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Women's High Neck Knitted Jumper"
+        ],
+        [
+          "h2",
+          "Find your fit"
+        ],
+        [
+          "h2",
+          "Added to your bag"
+        ]
+      ],
+      "schema_count": 1
+    },
+    "https://elvarqo.uk/products/womens-collared-knitted-jumper": {
+      "status": 200,
+      "title": "Women's Collared Knitted Jumper | ELVARQO",
+      "meta": {
+        "": "https://elvarqo.uk/products/womens-collared-knitted-jumper",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "A collared knitted jumper with long sleeves and an open neckline. The supplied photographs show ribbed cuffs and hem.",
+        "robots": "index, follow",
+        "twitter:card": "summary",
+        "twitter:title": "Women's Collared Knitted Jumper | ELVARQO",
+        "twitter:description": "A collared knitted jumper with long sleeves and an open neckline. The supplied photographs show ribbed cuffs and hem."
+      },
+      "canonical": [
+        "https://elvarqo.uk/products/womens-collared-knitted-jumper"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Women's Collared Knitted Jumper"
+        ],
+        [
+          "h2",
+          "Find your fit"
+        ],
+        [
+          "h2",
+          "Added to your bag"
+        ]
+      ],
+      "schema_count": 1
+    },
+    "https://elvarqo.uk/products/womens-v-neck-knitted-jumper": {
+      "status": 200,
+      "title": "Women's V-Neck Knitted Jumper | ELVARQO",
+      "meta": {
+        "": "https://elvarqo.uk/products/womens-v-neck-knitted-jumper",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "A plain V-neck knitted jumper with long sleeves. The supplied photographs show ribbed cuffs and hem.",
+        "robots": "index, follow",
+        "twitter:card": "summary",
+        "twitter:title": "Women's V-Neck Knitted Jumper | ELVARQO",
+        "twitter:description": "A plain V-neck knitted jumper with long sleeves. The supplied photographs show ribbed cuffs and hem."
+      },
+      "canonical": [
+        "https://elvarqo.uk/products/womens-v-neck-knitted-jumper"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Women's V-Neck Knitted Jumper"
+        ],
+        [
+          "h2",
+          "Find your fit"
+        ],
+        [
+          "h2",
+          "Added to your bag"
+        ]
+      ],
+      "schema_count": 1
+    },
+    "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper": {
+      "status": 200,
+      "title": "Women's Roll Neck Knitted Jumper | ELVARQO",
+      "meta": {
+        "": "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "A long-sleeved knitted jumper with a raised neckline. The supplied photographs show ribbed cuffs and hem.",
+        "robots": "index, follow",
+        "twitter:card": "summary",
+        "twitter:title": "Women's Roll Neck Knitted Jumper | ELVARQO",
+        "twitter:description": "A long-sleeved knitted jumper with a raised neckline. The supplied photographs show ribbed cuffs and hem."
+      },
+      "canonical": [
+        "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Women's Roll Neck Knitted Jumper"
+        ],
+        [
+          "h2",
+          "Find your fit"
+        ],
+        [
+          "h2",
+          "Added to your bag"
+        ]
+      ],
+      "schema_count": 1
+    },
+    "https://elvarqo.uk/accessibility": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Accessible by design"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/account": {
+      "status": 200,
+      "title": "Your account | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, nofollow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Your ELVARQO account"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/bag": {
+      "status": 200,
+      "title": "Your bag | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, nofollow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Your bag"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby": {
+      "status": 200,
+      "title": "Baby | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Little details.Lots of love."
+        ],
+        [
+          "h2",
+          "Shop by category"
+        ],
+        [
+          "h2",
+          "Trending now"
+        ],
+        [
+          "h3",
+          "Your next favourites are on their way."
+        ],
+        [
+          "h2",
+          "Little wardrobe essentials"
+        ],
+        [
+          "h2",
+          "Little essentials"
+        ],
+        [
+          "h3",
+          "Bodysuits"
+        ],
+        [
+          "h3",
+          "First Shoes"
+        ],
+        [
+          "h3",
+          "Socks & Tights"
+        ],
+        [
+          "h2",
+          "Small beginnings.Beautiful details."
+        ],
+        [
+          "h2",
+          "New arrivals"
+        ],
+        [
+          "h2",
+          "Shop the collection"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ],
+        [
+          "h2",
+          "A little more considered."
+        ],
+        [
+          "h2",
+          "The ELVARQO letter"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-accessories": {
+      "status": 200,
+      "title": "Accessories | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-accessories"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Accessories"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-bodysuits": {
+      "status": 200,
+      "title": "Bodysuits | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-bodysuits"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Bodysuits"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-dresses": {
+      "status": 200,
+      "title": "Dresses | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-dresses"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Dresses"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-first-shoes": {
+      "status": 200,
+      "title": "First Shoes | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-first-shoes"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "First Shoes"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-knitwear": {
+      "status": 200,
+      "title": "Knitwear | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-knitwear"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Knitwear"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-occasionwear": {
+      "status": 200,
+      "title": "Occasionwear | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-occasionwear"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Occasionwear"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-rompersuits": {
+      "status": 200,
+      "title": "Rompersuits | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-rompersuits"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Rompersuits"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-sets-outfits": {
+      "status": 200,
+      "title": "Sets & Outfits | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-sets-outfits"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Sets & Outfits"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-sleepsuits": {
+      "status": 200,
+      "title": "Sleepsuits | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-sleepsuits"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Sleepsuits"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/baby-socks-tights": {
+      "status": 200,
+      "title": "Socks & Tights | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/baby-socks-tights"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Socks & Tights"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty": {
+      "status": 200,
+      "title": "Beauty | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Your everyday,beautifully."
+        ],
+        [
+          "h2",
+          "Shop by category"
+        ],
+        [
+          "h2",
+          "Trending now"
+        ],
+        [
+          "h3",
+          "Your next favourites are on their way."
+        ],
+        [
+          "h2",
+          "Find your beauty favourites"
+        ],
+        [
+          "h2",
+          "Thoughtful gifting"
+        ],
+        [
+          "h3",
+          "Fragrance Gifts"
+        ],
+        [
+          "h3",
+          "Skincare Gifts"
+        ],
+        [
+          "h3",
+          "Beauty Boxes"
+        ],
+        [
+          "h2",
+          "A little ritual.A little you."
+        ],
+        [
+          "h2",
+          "New arrivals"
+        ],
+        [
+          "h2",
+          "Shop the collection"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ],
+        [
+          "h2",
+          "A little more considered."
+        ],
+        [
+          "h2",
+          "The ELVARQO letter"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-all-gifting": {
+      "status": 200,
+      "title": "All Gifting | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-all-gifting"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "All Gifting"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-bath-body-gifts": {
+      "status": 200,
+      "title": "Bath & Body Gifts | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-bath-body-gifts"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Bath & Body Gifts"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-bath-body-works": {
+      "status": 200,
+      "title": "Bath & Body Works | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-bath-body-works"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Bath & Body Works"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-boxes": {
+      "status": 200,
+      "title": "Beauty Boxes | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-boxes"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Beauty Boxes"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-electricals-hair": {
+      "status": 200,
+      "title": "Electricals & Hair | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-electricals-hair"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Electricals & Hair"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-fragrance-gifts": {
+      "status": 200,
+      "title": "Fragrance Gifts | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-fragrance-gifts"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Fragrance Gifts"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-gifts-for-her": {
+      "status": 200,
+      "title": "Gifts for Her | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-gifts-for-her"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Gifts for Her"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-gifts-for-him": {
+      "status": 200,
+      "title": "Gifts for Him | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-gifts-for-him"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Gifts for Him"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-makeup-gifts": {
+      "status": 200,
+      "title": "Makeup Gifts | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-makeup-gifts"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Makeup Gifts"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/beauty-skincare-gifts": {
+      "status": 200,
+      "title": "Skincare Gifts | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/beauty-skincare-gifts"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Skincare Gifts"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys": {
+      "status": 200,
+      "title": "Boys | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Ready for everyadventure."
+        ],
+        [
+          "h2",
+          "Shop by category"
+        ],
+        [
+          "h2",
+          "Trending now"
+        ],
+        [
+          "h3",
+          "Your next favourites are on their way."
+        ],
+        [
+          "h2",
+          "Made for their every day"
+        ],
+        [
+          "h2",
+          "Ready for the everyday"
+        ],
+        [
+          "h3",
+          "Boots"
+        ],
+        [
+          "h3",
+          "Trainers"
+        ],
+        [
+          "h3",
+          "Pyjamas"
+        ],
+        [
+          "h2",
+          "Big days.Little details."
+        ],
+        [
+          "h2",
+          "New arrivals"
+        ],
+        [
+          "h2",
+          "Shop the collection"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ],
+        [
+          "h2",
+          "A little more considered."
+        ],
+        [
+          "h2",
+          "The ELVARQO letter"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-boots": {
+      "status": 200,
+      "title": "Boots | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-boots"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Boots"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-coats-jackets": {
+      "status": 200,
+      "title": "Coats & Jackets | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-coats-jackets"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Coats & Jackets"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-fleeces": {
+      "status": 200,
+      "title": "Fleeces | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-fleeces"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Fleeces"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-jeans": {
+      "status": 200,
+      "title": "Jeans | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-jeans"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Jeans"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-joggers": {
+      "status": 200,
+      "title": "Joggers | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-joggers"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Joggers"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-pyjamas": {
+      "status": 200,
+      "title": "Pyjamas | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-pyjamas"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Pyjamas"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-sets-outfits": {
+      "status": 200,
+      "title": "Sets & Outfits | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-sets-outfits"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Sets & Outfits"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-sweatshirts-hoodies": {
+      "status": 200,
+      "title": "Sweatshirts & Hoodies | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-sweatshirts-hoodies"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Sweatshirts & Hoodies"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-t-shirts": {
+      "status": 200,
+      "title": "T-Shirts | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-t-shirts"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "T-Shirts"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/boys-trainers": {
+      "status": 200,
+      "title": "Trainers | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/boys-trainers"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Trainers"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls": {
+      "status": 200,
+      "title": "Girls | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Every day, a littleextraordinary."
+        ],
+        [
+          "h2",
+          "Shop by category"
+        ],
+        [
+          "h2",
+          "Trending now"
+        ],
+        [
+          "h3",
+          "Your next favourites are on their way."
+        ],
+        [
+          "h2",
+          "Ready for every plan"
+        ],
+        [
+          "h2",
+          "The finishing touches"
+        ],
+        [
+          "h3",
+          "Leggings"
+        ],
+        [
+          "h3",
+          "Boots"
+        ],
+        [
+          "h3",
+          "Pyjamas"
+        ],
+        [
+          "h2",
+          "Their world.Their own style."
+        ],
+        [
+          "h2",
+          "New arrivals"
+        ],
+        [
+          "h2",
+          "Shop the collection"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ],
+        [
+          "h2",
+          "A little more considered."
+        ],
+        [
+          "h2",
+          "The ELVARQO letter"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-boots": {
+      "status": 200,
+      "title": "Boots | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-boots"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Boots"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-coats-jackets": {
+      "status": 200,
+      "title": "Coats & Jackets | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-coats-jackets"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Coats & Jackets"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-dresses": {
+      "status": 200,
+      "title": "Dresses | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-dresses"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Dresses"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-jeans": {
+      "status": 200,
+      "title": "Jeans | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-jeans"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Jeans"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-joggers": {
+      "status": 200,
+      "title": "Joggers | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-joggers"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Joggers"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-leggings": {
+      "status": 200,
+      "title": "Leggings | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-leggings"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Leggings"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-pyjamas": {
+      "status": 200,
+      "title": "Pyjamas | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-pyjamas"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Pyjamas"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-sets-outfits": {
+      "status": 200,
+      "title": "Sets & Outfits | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-sets-outfits"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Sets & Outfits"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-sweatshirts-hoodies": {
+      "status": 200,
+      "title": "Sweatshirts & Hoodies | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-sweatshirts-hoodies"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Sweatshirts & Hoodies"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/girls-tops": {
+      "status": 200,
+      "title": "Tops | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/girls-tops"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Tops"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/men": {
+      "status": 200,
+      "title": "Men | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/men"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "A new season.Your own style."
+        ],
+        [
+          "h2",
+          "Shop by category"
+        ],
+        [
+          "h2",
+          "Styled for you"
+        ],
+        [
+          "h2",
+          "Trending now"
+        ],
+        [
+          "h3",
+          "Your next favourites are on their way."
+        ],
+        [
+          "h2",
+          "Style thatgoes further."
+        ],
+        [
+          "h2",
+          "What to wear"
+        ],
+        [
+          "h3",
+          "Modern workwear"
+        ],
+        [
+          "h3",
+          "Autumn essentials"
+        ],
+        [
+          "h3",
+          "Occasionwear"
+        ],
+        [
+          "h2",
+          "New arrivals"
+        ],
+        [
+          "h2",
+          "Good pieces.On repeat."
+        ],
+        [
+          "h2",
+          "Shop the collection"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ],
+        [
+          "h2",
+          "A little more considered."
+        ],
+        [
+          "h2",
+          "The ELVARQO letter"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-coats-jackets": {
+      "status": 200,
+      "title": "Coats & Jackets | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-coats-jackets"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Coats & Jackets"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-footwear": {
+      "status": 200,
+      "title": "Footwear | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-footwear"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Footwear"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-jeans": {
+      "status": 200,
+      "title": "Jeans | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-jeans"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Jeans"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-knitwear": {
+      "status": 200,
+      "title": "Knitwear | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-knitwear"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Knitwear"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-nightwear": {
+      "status": 200,
+      "title": "Nightwear | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-nightwear"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Nightwear"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-shirts": {
+      "status": 200,
+      "title": "Shirts | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-shirts"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Shirts"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-suits": {
+      "status": 200,
+      "title": "Suits | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-suits"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Suits"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-t-shirts-polos": {
+      "status": 200,
+      "title": "T-Shirts & Polos | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-t-shirts-polos"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "T-Shirts & Polos"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-trousers": {
+      "status": 200,
+      "title": "Trousers | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-trousers"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Trousers"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/mens-underwear": {
+      "status": 200,
+      "title": "Underwear | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/mens-underwear"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Underwear"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-boots": {
+      "status": 200,
+      "title": "Boots | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-boots"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Boots"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-coats-jackets": {
+      "status": 200,
+      "title": "Coats & Jackets | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-coats-jackets"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Coats & Jackets"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-denim": {
+      "status": 200,
+      "title": "All Denim | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-denim"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "All Denim"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-dresses": {
+      "status": 200,
+      "title": "Dresses | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-dresses"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Dresses"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-lingerie": {
+      "status": 200,
+      "title": "Lingerie | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-lingerie"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Lingerie"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-pyjamas": {
+      "status": 200,
+      "title": "Pyjamas | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-pyjamas"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Pyjamas"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-skirts": {
+      "status": 200,
+      "title": "Skirts | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-skirts"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Skirts"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-tops-t-shirts": {
+      "status": 200,
+      "title": "Tops & T-Shirts | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-tops-t-shirts"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Tops & T-Shirts"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/collections/womens-trousers": {
+      "status": 200,
+      "title": "Trousers | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-trousers"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Trousers"
+        ],
+        [
+          "h2",
+          "Refine your selection"
+        ],
+        [
+          "h2",
+          "No pieces match this selection."
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/contact": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Customer care"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/cookies": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Your privacy choices"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/delivery-returns": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Delivery & returns"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/design-system": {
+      "status": 200,
+      "title": "UI reference | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, nofollow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Considered, consistent controls."
+        ],
+        [
+          "h2",
+          "Actions & feedback"
+        ],
+        [
+          "h2",
+          "Forms & validation"
+        ],
+        [
+          "h2",
+          "Loading & empty states"
+        ],
+        [
+          "h3",
+          "Nothing here yet"
+        ],
+        [
+          "h2",
+          "Table & pagination"
+        ],
+        [
+          "h2",
+          "Example dialog"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/development": {
+      "status": 200,
+      "title": "Development connection | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, nofollow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Connection check."
+        ],
+        [
+          "h2",
+          "Laravel connection"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/help": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "How can we help?"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/our-story": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Our story"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/privacy": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Privacy notice"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/returns": {
+      "status": 200,
+      "title": "Guest returns | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, nofollow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Guest returns"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/size-guide": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Find your fit"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/terms": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Terms & conditions"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/the-edit": {
+      "status": 200,
+      "title": "ELVARQO | Considered everyday wear",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, follow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "The Edit"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/track": {
+      "status": 200,
+      "title": "Track your order | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "referrer": "no-referrer",
+        "robots": "noindex, nofollow"
+      },
+      "canonical": [],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Track your order"
+        ]
+      ],
+      "schema_count": 0
+    },
+    "https://elvarqo.uk/wishlist": {
+      "status": 200,
+      "title": "Your saved pieces | ELVARQO",
+      "meta": {
+        "": "",
+        "viewport": "width=device-width, initial-scale=1",
+        "description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+        "robots": "noindex, nofollow"
+      },
+      "canonical": [
+        "https://elvarqo.uk/wishlist"
+      ],
+      "headings": [
+        [
+          "h2",
+          "Explore ELVARQO"
+        ],
+        [
+          "h2",
+          "Search the collection"
+        ],
+        [
+          "h2",
+          "Your bag"
+        ],
+        [
+          "h2",
+          "Your ELVARQO account"
+        ],
+        [
+          "h1",
+          "Your saved pieces"
+        ]
+      ],
+      "schema_count": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source": "Read-only local database lookup; IDs are evidence, not hard-coded into importer. JSON resolves slugs against the destination database at preview.",
+  "collection": {
+    "id": 9,
+    "title": "Women",
+    "slug": "women"
+  },
+  "category": {
+    "id": 16,
+    "title": "Knitwear",
+    "slug": "womens-knitwear"
+  }
+}

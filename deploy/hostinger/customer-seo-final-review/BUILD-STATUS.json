@@ -1,0 +1,31 @@
+{
+  "scope": "NOT DEPLOYED; actual privately built Linux standalone plus source/review package",
+  "local_build": {
+    "platform": "Windows x64",
+    "node_major": 24,
+    "next": "16.4.2",
+    "config": "MJS; webpack; standalone; 2 workers",
+    "wasm": "forced fallback; log confirms using WASM bindings",
+    "result": "PASS"
+  },
+  "local_routes": "PASS 6 products / 216 offers /11 sitemap URLs; isolated fixture",
+  "hostinger_linux_build": {
+    "result": "PASS",
+    "approval": "User explicitly approved private upload/Linux build only",
+    "path": "/home/u688505577/elvarqo/deployments/20261105-customer-seo-final-review-v2",
+    "node": "24.22.1",
+    "artifact_sha256": "eb7b067eb40c347dc964cb6b2fcb36c30acf162ae6f41d41ad20468685de3522",
+    "bytes": 31423955
+  },
+  "remote_activation": "NOT AUTHORISED; NOT PERFORMED",
+  "catalogue_copy_changes": "REVIEW ONLY; not applied",
+  "product_evidence": "UNVERIFIED per six checklists",
+  "package_is_linux_runtime": true,
+  "linux_loopback_runtime": {
+    "result": "INCOMPLETE",
+    "evidence": "Server logged Ready, HTTP connection ECONNREFUSED 127.0.0.1:41837 with fetch and direct HTTP",
+    "settings_or_port_exposure_changed": false
+  },
+  "active_release_preserved": true,
+  "active_htaccess_and_api_source_checksums_preserved": true
+}

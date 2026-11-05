@@ -1,0 +1,147 @@
+{
+  "checked_utc": "2026-11-05T05:27:30Z",
+  "responses": [
+    {
+      "url": "https://elvarqo.uk/sitemap.xml",
+      "status": 200,
+      "content_type": "application/xml; charset=utf-8",
+      "cache_control": "no-store, max-age=0",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "count": 11
+    },
+    {
+      "url": "https://www.elvarqo.uk/sitemap.xml",
+      "status": 200,
+      "content_type": "application/xml; charset=utf-8",
+      "cache_control": "no-store, max-age=0",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "count": 11
+    },
+    {
+      "url": "https://elvarqo.uk/sitemap.xml?check=1793856438",
+      "status": 200,
+      "content_type": "application/xml; charset=utf-8",
+      "cache_control": "no-store, max-age=0",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "count": 11
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://elvarqo.uk/",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/shop",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/shop"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/collections",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/collections"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/collections/women",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/collections/women"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/collections/womens-knitwear",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/collections/womens-knitwear"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-high-neck-knitted-jumper",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/products/womens-high-neck-knitted-jumper"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-collared-knitted-jumper",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/products/womens-collared-knitted-jumper"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-v-neck-knitted-jumper",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/products/womens-v-neck-knitted-jumper"
+      ]
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "canonical": [
+        "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper"
+      ]
+    }
+  ],
+  "head_pass": true,
+  "robots_pass": true,
+  "feed_lastmod_match": true
+}

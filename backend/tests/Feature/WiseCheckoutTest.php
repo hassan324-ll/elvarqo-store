@@ -87,6 +87,19 @@ class WiseCheckoutTest extends TestCase
         Http::assertNothingSent();
     }
 
+    public function test_wise_always_available_checkout_does_not_reserve_or_commit_stock(): void
+    {
+        config(['catalogue.track_stock' => false]);
+        DB::table('stock_balances')->delete();
+        $o = $this->order();
+        $this->assertDatabaseCount('commerce_reservations', 0);
+        $this->staff('orders/'.$o['id'].'/confirm-wise-payment', $this->evidence($o))->assertOk();
+        $this->assertDatabaseHas('commerce_orders', ['id' => $o['id'], 'payment_state' => 'paid']);
+        $this->assertDatabaseCount('stock_balances', 0);
+        $this->assertDatabaseCount('commerce_stock_events', 0);
+        Http::assertNothingSent();
+    }
+
     public function test_checkout_is_owned_idempotent_and_freezes_encrypted_instructions(): void
     {
         $v = $this->input();

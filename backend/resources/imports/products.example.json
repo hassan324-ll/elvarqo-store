@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "products": [
+    {
+      "title": "Example knitted jumper — replace with verified details",
+      "slug": "example-knitted-jumper",
+      "product_type": "Knitwear",
+      "description": "Replace this example copy with a description supported by your supplier evidence.",
+      "material": null,
+      "fit": null,
+      "care": null,
+      "measurements": [],
+      "groups": [{ "collection_slug": "women", "category_slug": "womens-knitwear" }],
+      "variants": [
+        {
+          "sku": null,
+          "barcode": null,
+          "colour": null,
+          "size": null,
+          "price_minor": null,
+          "compare_at_minor": null,
+          "currency": "GBP",
+          "weight_grams": null,
+          "measurements": null,
+          "fit": null,
+          "care": null,
+          "supplier_variant_id": null,
+          "supplier_cost_minor": null,
+          "supplier_currency": null,
+          "supplier_shipping_cost_minor": null,
+          "supplier_checked_at": null
+        }
+      ],
+      "seo_title": null,
+      "seo_description": null,
+      "images": [],
+      "supplier": {
+        "name": "AliExpress",
+        "product_id": "1000000000000001",
+        "url": "https://www.aliexpress.com/item/1000000000000001.html",
+        "cost_minor": null,
+        "currency": null,
+        "shipping_cost_minor": null,
+        "checked_at": null
+      }
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Catalogue\Availability;
 use App\Catalogue\CatalogueData as D;
 use App\Catalogue\CatalogueWriter as W;
 use App\Models\CatalogueProduct as Product;
@@ -38,7 +39,7 @@ class StockController extends Controller
         $items = $page->getCollection()->map(function ($variant) use ($v) {
             $balances = DB::table('stock_balances')->join('stock_locations', 'location_id', '=', 'stock_locations.id')->where('variant_id', $variant->id)->when(isset($v['location_id']), fn ($q) => $q->where('location_id', $v['location_id']))->select('location_id', 'name', 'on_hand', 'reserved')->get()->map(fn ($b) => ['location_id' => $b->location_id, 'location' => $b->name, 'on_hand' => $b->on_hand, 'reserved' => $b->reserved, 'available' => $b->on_hand - $b->reserved]);
 
-            return ['id' => $variant->id, 'product_id' => $variant->product_id, 'title' => $variant->title, 'sku' => $variant->sku, 'low_stock_threshold' => $variant->low_stock_threshold, 'balances' => $balances];
+            return ['id' => $variant->id, 'product_id' => $variant->product_id, 'title' => $variant->title, 'sku' => $variant->sku, 'low_stock_threshold' => $variant->low_stock_threshold, 'stock_tracked' => Availability::tracked(), 'is_in_stock' => Availability::inStock((int) $balances->sum('available')), 'balances' => $balances];
         });
 
         return D::ok(['items' => $items, 'page' => $page->currentPage(), 'last_page' => $page->lastPage(), 'total' => $page->total()]);

@@ -2,10 +2,12 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import {
   collections,
+  listing,
   navigation,
   indexEnabled,
   type Query,
 } from '../../../lib/catalogue-server';
+import { collectionContent } from '../../../lib/collection-content';
 import ListingPage from '../../../components/shop/listing-page';
 import Recovery from '../../../components/shop/recovery';
 import WomenLanding from '../../../components/shop/women-landing';
@@ -25,15 +27,24 @@ export async function generateMetadata({ params, searchParams }: Props) {
     const c = menu
       .flatMap((c) => [c, ...(c.categories || [])])
       .find((c) => c.slug === collection);
+    const useful =
+      c?.kind === 'category'
+        ? (await listing(new URLSearchParams({ collection, per_page: '1' })))
+            .total > 0
+        : visible.some((item) => item.slug === collection);
+    const copy = c
+      ? collectionContent(
+          c,
+          menu.find((parent) => parent.id === c.parent_id),
+        )
+      : undefined;
     return {
-      title: c?.title || 'Collection unavailable',
+      title: copy?.title || 'Collection unavailable',
+      description: copy?.description,
       alternates: { canonical: '/collections/' + collection },
       robots: {
         index:
-          !!c &&
-          visible.some((item) => item.slug === collection) &&
-          indexEnabled &&
-          !Object.values(query).some(Boolean),
+          !!c && useful && indexEnabled && !Object.values(query).some(Boolean),
         follow: true,
       },
     };
@@ -61,6 +72,8 @@ export default async function Collection({ params, searchParams }: Props) {
     .flatMap((c) => [c, ...(c.categories || [])])
     .find((c) => c.slug === collection);
   if (!c) notFound();
+  const parent = all.find((parent) => parent.id === c.parent_id);
+  const copy = collectionContent(c, parent);
   const campaign = collectionCampaigns[c.slug];
   if (c.kind === 'collection' && campaign)
     return (
@@ -76,6 +89,22 @@ export default async function Collection({ params, searchParams }: Props) {
     return <WomenLanding collection={c} query={await searchParams} />;
   return (
     <>
+      {c.kind === 'category' && (
+        <nav
+          className="store-section category-breadcrumbs"
+          aria-label="Breadcrumb"
+        >
+          <Link href="/shop">Shop</Link>
+          <span aria-hidden="true"> / </span>
+          {parent && (
+            <>
+              <Link href={'/collections/' + parent.slug}>{parent.title}</Link>
+              <span aria-hidden="true"> / </span>
+            </>
+          )}
+          <span aria-current="page">{c.title}</span>
+        </nav>
+      )}
       {c.kind === 'collection' && !!c.categories?.length && (
         <section
           className="store-category-section"
@@ -103,8 +132,8 @@ export default async function Collection({ params, searchParams }: Props) {
       )}
       <ListingPage
         path={'/collections/' + c.slug}
-        title={c.title}
-        description={c.description || undefined}
+        title={copy.heading}
+        description={copy.introduction}
         collection={c.slug}
         query={await searchParams}
       />

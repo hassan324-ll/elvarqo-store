@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\CatalogueController as C;
+use App\Http\Controllers\CatalogueImportController;
+use App\Http\Controllers\CatalogueSitemapController;
 use App\Http\Controllers\PublicCatalogueController as P;
 use App\Http\Controllers\StockController as S;
 use App\Http\Middleware\StaffOrigin;
@@ -9,6 +11,7 @@ use App\Http\Middleware\StaffSession;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1/catalogue')->group(function () {
+    Route::get('sitemap', CatalogueSitemapController::class)->middleware('throttle:catalogue-read');
     Route::get('saved-products', [P::class, 'saved'])->middleware('throttle:catalogue-read');
     Route::get('products', [P::class, 'index'])->middleware('throttle:catalogue-read');
     Route::get('products/{slug}', [P::class, 'show'])->middleware('throttle:catalogue-read');
@@ -28,6 +31,13 @@ Route::prefix('v1/staff/catalogue')->middleware(['web', StaffOrigin::class, Staf
     Route::get('inventory', [S::class, 'inventory']);
     Route::get('movements', [S::class, 'history']);
     Route::middleware(StaffPermission::class.':catalogue.manage')->group(function () {
+        Route::get('imports/template', [CatalogueImportController::class, 'template']);
+        Route::get('imports', [CatalogueImportController::class, 'history']);
+        Route::post('imports/preview', [CatalogueImportController::class, 'preview']);
+        Route::get('imports/{batch}/items/{item}/images/{index}', [CatalogueImportController::class, 'image'])->whereUuid('batch')->whereNumber('item')->whereNumber('index');
+        Route::get('imports/{batch}', [CatalogueImportController::class, 'show'])->whereUuid('batch');
+        Route::post('imports/{batch}/items/{item}', [CatalogueImportController::class, 'run'])->whereUuid('batch')->whereNumber('item');
+        Route::get('products/{id}/supplier', [CatalogueImportController::class, 'supplier'])->whereNumber('id');
         Route::post('products', [C::class, 'create']);
         Route::post('products/{id}', [C::class, 'update'])->whereNumber('id');
         Route::post('products/{id}/delete', [C::class, 'destroy'])->whereNumber('id');

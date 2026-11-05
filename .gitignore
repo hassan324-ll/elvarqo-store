@@ -31,3 +31,6 @@
 **/*.zip
 **/*.tar.gz
 **/*.log
+
+# Isolated local production build used for customer SEO verification
+/storefront/.next-seo-audit/

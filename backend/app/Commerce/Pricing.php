@@ -2,6 +2,7 @@
 
 namespace App\Commerce;
 
+use App\Catalogue\Availability;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\ValidationException;
 
@@ -23,7 +24,7 @@ class Pricing
                 continue;
             }
             $available = (int) DB::table('stock_balances as b')->join('stock_locations as l', 'l.id', '=', 'b.location_id')->where('l.active', true)->where('b.variant_id', $id)->sum(DB::raw('b.on_hand-b.reserved'));
-            $lines[] = ['variant_id' => $v->id, 'product_id' => $v->product_id, 'sku' => $v->sku, 'title' => $v->title, 'slug' => $v->slug, 'colour' => $v->colour, 'size' => $v->size, 'quantity' => $quantity, 'unit_minor' => $v->price_minor, 'line_minor' => $v->price_minor * $quantity, 'currency' => $v->currency, 'available' => $available, 'unavailable' => $v->currency !== 'GBP' || $available < $quantity];
+            $lines[] = ['variant_id' => $v->id, 'product_id' => $v->product_id, 'sku' => $v->sku, 'title' => $v->title, 'slug' => $v->slug, 'colour' => $v->colour, 'size' => $v->size, 'quantity' => $quantity, 'unit_minor' => $v->price_minor, 'line_minor' => $v->price_minor * $quantity, 'currency' => $v->currency, 'available' => $available, 'stock_tracked' => Availability::tracked(), 'unavailable' => $v->currency !== 'GBP' || (Availability::tracked() && $available < $quantity)];
         }
 
         return $lines;

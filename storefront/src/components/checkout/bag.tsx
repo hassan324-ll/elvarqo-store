@@ -112,8 +112,8 @@ export default function BagContents({
             </strong>
           </p>
           <p>
-            Delivery and test tax calculated at checkout. Stock is reserved when
-            you continue to hosted payment.
+            Delivery and test tax calculated at checkout. Prices and
+            availability are checked again before you place your order.
           </p>
           {!bag.active_order_id && !bag.items.some((l) => l.unavailable) && (
             <Link

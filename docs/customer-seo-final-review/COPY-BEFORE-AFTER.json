@@ -1,0 +1,838 @@
+{
+  "scope": "Final review only. No prices, policies, publication or supplier mappings changed. Product/alt proposals are NOT included in runtime overrides or a database migration.",
+  "snapshot_utc": "2026-11-05T07:44:09Z",
+  "products": [
+    {
+      "id": 1,
+      "url": "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper",
+      "slug_unchanged": true,
+      "status": "REVIEW ONLY \u2014 not applied; product/photo identity confirmation required",
+      "before": {
+        "title_h1": "Women's Textured V-Neck Knitted Jumper",
+        "description": "A V-neck knitted jumper with long sleeves. The supplied photographs show vertical textured panels and ribbed cuffs and hem.",
+        "seo_title": "Women's Textured V-Neck Knitted Jumper | ELVARQO",
+        "seo_description": "A V-neck knitted jumper with long sleeves. The supplied photographs show vertical textured panels and ribbed cuffs and hem."
+      },
+      "after_proposal": {
+        "title_h1": "Women's Textured V-Neck Knitted Jumper",
+        "description": "A long-sleeved V-neck knitted jumper with vertical textured panels and ribbed edging.",
+        "seo_title": "Women's Textured V-Neck Knitted Jumper | ELVARQO",
+        "seo_description": "A long-sleeved V-neck knitted jumper with vertical textured panels and ribbed edging."
+      },
+      "images": [
+        {
+          "view": 1,
+          "media_id": "dc15872d-923a-4a01-95dd-990730464ef4",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/dc15872d-923a-4a01-95dd-990730464ef4/1280",
+          "before": "Women's textured v-neck knitted jumper, supplier photograph 1",
+          "after_proposal": "Front view of a textured V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 2,
+          "media_id": "025eeaf0-b1e5-4486-aa5e-5035b4bfe3a9",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/025eeaf0-b1e5-4486-aa5e-5035b4bfe3a9/1280",
+          "before": "Women's textured v-neck knitted jumper, supplier photograph 2",
+          "after_proposal": "Front view of a textured V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 3,
+          "media_id": "79a30c55-7c69-4b5c-a9b0-8c61a23803cd",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/79a30c55-7c69-4b5c-a9b0-8c61a23803cd/1280",
+          "before": "Women's textured v-neck knitted jumper, supplier photograph 3",
+          "after_proposal": "Front view of a textured V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 4,
+          "media_id": "a5fc4966-28ee-4fff-8a4c-1b77c8c35089",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/a5fc4966-28ee-4fff-8a4c-1b77c8c35089/1280",
+          "before": "Women's textured v-neck knitted jumper, supplier photograph 4",
+          "after_proposal": "Front view of a textured V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 5,
+          "media_id": "fdaa283a-efb1-44b6-943a-36e9521891de",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/fdaa283a-efb1-44b6-943a-36e9521891de/1280",
+          "before": "Women's textured v-neck knitted jumper, supplier photograph 5",
+          "after_proposal": "Front view of a textured V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 6,
+          "media_id": "3719d5e2-b6b2-49a1-a301-a26023367963",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/3719d5e2-b6b2-49a1-a301-a26023367963/1280",
+          "before": "Women's textured v-neck knitted jumper, supplier photograph 6",
+          "after_proposal": "Front view of a textured V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        }
+      ],
+      "checklist": {
+        "composition": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "measurements": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "care": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "colours": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "supplier_variants": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "photo_matches": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "url": "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper",
+      "slug_unchanged": true,
+      "status": "REVIEW ONLY \u2014 not applied; product/photo identity confirmation required",
+      "before": {
+        "title_h1": "Women's Crew Neck Knitted Jumper",
+        "description": "A knitted jumper with a round neckline and long sleeves. The selected photographs show ribbed edging at the neckline, cuffs and hem.",
+        "seo_title": "Women's Crew Neck Knitted Jumper | ELVARQO",
+        "seo_description": "A knitted jumper with a round neckline and long sleeves. The selected photographs show ribbed edging at the neckline, cuffs and hem."
+      },
+      "after_proposal": {
+        "title_h1": "Women's Crew Neck Knitted Jumper",
+        "description": "A round-neck knitted jumper with long sleeves and ribbed edging at the neckline, cuffs and hem.",
+        "seo_title": "Women's Crew Neck Knitted Jumper | ELVARQO",
+        "seo_description": "A round-neck knitted jumper with long sleeves and ribbed edging at the neckline, cuffs and hem."
+      },
+      "images": [
+        {
+          "view": 1,
+          "media_id": "2ffdbd96-a517-4389-b6b2-6d99e0f60672",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/2ffdbd96-a517-4389-b6b2-6d99e0f60672/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 1",
+          "after_proposal": "Close-up of a knitted jumper neckline and ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 2,
+          "media_id": "2811827a-00c1-462d-a744-cd0242c3a1d9",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/2811827a-00c1-462d-a744-cd0242c3a1d9/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 2",
+          "after_proposal": "Front view of a round-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 3,
+          "media_id": "f247b33e-4907-4b11-8cae-ad7dc201250b",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/f247b33e-4907-4b11-8cae-ad7dc201250b/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 5",
+          "after_proposal": "Close-up of knitted jumper fabric",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 4,
+          "media_id": "11c9e5d3-73a5-44ee-a3df-1d490cdf7f64",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/11c9e5d3-73a5-44ee-a3df-1d490cdf7f64/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 6",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 5,
+          "media_id": "86419a70-bd83-404e-862c-e1529efec5b1",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/86419a70-bd83-404e-862c-e1529efec5b1/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 7",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 6,
+          "media_id": "3c897e41-448e-4b2e-9410-46d84ba7886e",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/3c897e41-448e-4b2e-9410-46d84ba7886e/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 9",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 7,
+          "media_id": "21b05670-2c5f-4bad-8a5c-2d63af18376c",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/21b05670-2c5f-4bad-8a5c-2d63af18376c/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 10",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 8,
+          "media_id": "8643765d-fd20-4655-9db1-7e64f94fa193",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/8643765d-fd20-4655-9db1-7e64f94fa193/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 13",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 9,
+          "media_id": "1f6f0be0-8025-44af-8a28-245987e171b1",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/1f6f0be0-8025-44af-8a28-245987e171b1/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 14",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 10,
+          "media_id": "23ca8860-0eba-4c4b-b098-f866540c52c3",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/23ca8860-0eba-4c4b-b098-f866540c52c3/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 16",
+          "after_proposal": "Close-up of a knitted jumper sleeve and ribbed cuff",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 11,
+          "media_id": "4d1137ed-645e-4ac5-b4a9-ce12d8597114",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/4d1137ed-645e-4ac5-b4a9-ce12d8597114/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 17",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 12,
+          "media_id": "81b64711-bec5-48af-a43d-3482b0a82276",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/81b64711-bec5-48af-a43d-3482b0a82276/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 18",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 13,
+          "media_id": "e594c51c-ddac-49a1-b780-4f00c1af9e8a",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/e594c51c-ddac-49a1-b780-4f00c1af9e8a/1280",
+          "before": "Women's crew neck knitted jumper, supplier photograph 19",
+          "after_proposal": "Mirror photograph of a round-neck knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        }
+      ],
+      "checklist": {
+        "composition": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "measurements": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "care": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "colours": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "supplier_variants": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "photo_matches": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "url": "https://elvarqo.uk/products/womens-high-neck-knitted-jumper",
+      "slug_unchanged": true,
+      "status": "REVIEW ONLY \u2014 not applied; product/photo identity confirmation required",
+      "before": {
+        "title_h1": "Women's High Neck Knitted Jumper",
+        "description": "A plain knitted jumper with long sleeves and a high neckline. Ribbed detailing is visible at the cuffs and hem in the supplied photographs.",
+        "seo_title": "Women's High Neck Knitted Jumper | ELVARQO",
+        "seo_description": "A plain knitted jumper with long sleeves and a high neckline. Ribbed detailing is visible at the cuffs and hem in the supplied photographs."
+      },
+      "after_proposal": {
+        "title_h1": "Women's Plain Knitted Jumper",
+        "description": "A plain knitted jumper with long sleeves and ribbed edging at the neckline, cuffs and hem.",
+        "seo_title": "Women's Plain Knitted Jumper | ELVARQO",
+        "seo_description": "A plain knitted jumper with long sleeves and ribbed edging at the neckline, cuffs and hem."
+      },
+      "images": [
+        {
+          "view": 1,
+          "media_id": "24c2a693-9c1d-4d3f-9c60-50febcf2de19",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/24c2a693-9c1d-4d3f-9c60-50febcf2de19/1280",
+          "before": "Women's high neck knitted jumper, supplier photograph 1",
+          "after_proposal": "Front view of a plain knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 2,
+          "media_id": "43f8bbcf-9fff-40ab-9a12-3d07931c8543",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/43f8bbcf-9fff-40ab-9a12-3d07931c8543/1280",
+          "before": "Women's high neck knitted jumper, supplier photograph 2",
+          "after_proposal": "Front view of a plain knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 3,
+          "media_id": "e51ad74f-d887-42c7-89cf-b4a2e7d0b426",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/e51ad74f-d887-42c7-89cf-b4a2e7d0b426/1280",
+          "before": "Women's high neck knitted jumper, supplier photograph 3",
+          "after_proposal": "Front view of a plain knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 4,
+          "media_id": "c575b918-e347-44de-a9d3-a2a88db10563",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/c575b918-e347-44de-a9d3-a2a88db10563/1280",
+          "before": "Women's high neck knitted jumper, supplier photograph 4",
+          "after_proposal": "Front view of a plain knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 5,
+          "media_id": "dbe95a82-4ca8-4050-b5d7-ce84052c0d92",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/dbe95a82-4ca8-4050-b5d7-ce84052c0d92/1280",
+          "before": "Women's high neck knitted jumper, supplier photograph 5",
+          "after_proposal": "Front view of a plain knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 6,
+          "media_id": "beafa69b-ac31-49cc-8f8f-ff1b435bd99b",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/beafa69b-ac31-49cc-8f8f-ff1b435bd99b/1280",
+          "before": "Women's high neck knitted jumper, supplier photograph 6",
+          "after_proposal": "Front view of a plain knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        }
+      ],
+      "checklist": {
+        "composition": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "measurements": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "care": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "colours": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "supplier_variants": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "photo_matches": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "url": "https://elvarqo.uk/products/womens-collared-knitted-jumper",
+      "slug_unchanged": true,
+      "status": "REVIEW ONLY \u2014 not applied; product/photo identity confirmation required",
+      "before": {
+        "title_h1": "Women's Collared Knitted Jumper",
+        "description": "A collared knitted jumper with long sleeves and an open neckline. The supplied photographs show ribbed cuffs and hem.",
+        "seo_title": "Women's Collared Knitted Jumper | ELVARQO",
+        "seo_description": "A collared knitted jumper with long sleeves and an open neckline. The supplied photographs show ribbed cuffs and hem."
+      },
+      "after_proposal": {
+        "title_h1": "Women's Collared Knitted Jumper",
+        "description": "A knitted jumper with a pointed collar, short button placket and ribbed cuffs and hem.",
+        "seo_title": "Women's Collared Knitted Jumper | ELVARQO",
+        "seo_description": "A knitted jumper with a pointed collar, short button placket and ribbed cuffs and hem."
+      },
+      "images": [
+        {
+          "view": 1,
+          "media_id": "7329b574-d5a0-44a8-9801-d52a25cc255e",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/7329b574-d5a0-44a8-9801-d52a25cc255e/1280",
+          "before": "Women's collared knitted jumper, supplier photograph 1",
+          "after_proposal": "Front view of a collared knitted jumper with a short button placket",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 2,
+          "media_id": "23063f00-1306-4c13-a296-779cf815821b",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/23063f00-1306-4c13-a296-779cf815821b/1280",
+          "before": "Women's collared knitted jumper, supplier photograph 2",
+          "after_proposal": "Front view of a collared knitted jumper with a short button placket",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 3,
+          "media_id": "e2520cfc-88aa-4312-8553-4624d4160262",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/e2520cfc-88aa-4312-8553-4624d4160262/1280",
+          "before": "Women's collared knitted jumper, supplier photograph 3",
+          "after_proposal": "Front view of a collared knitted jumper with a short button placket",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 4,
+          "media_id": "ad770459-4690-4643-97c3-95d049b60605",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/ad770459-4690-4643-97c3-95d049b60605/1280",
+          "before": "Women's collared knitted jumper, supplier photograph 4",
+          "after_proposal": "Front view of a collared knitted jumper with a short button placket",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 5,
+          "media_id": "ca823931-9273-493d-ab91-e6dd7e437307",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/ca823931-9273-493d-ab91-e6dd7e437307/1280",
+          "before": "Women's collared knitted jumper, supplier photograph 5",
+          "after_proposal": "Front view of a collared knitted jumper with a short button placket",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 6,
+          "media_id": "4d824dc5-cffb-48bf-ad06-2485fbdb4c51",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/4d824dc5-cffb-48bf-ad06-2485fbdb4c51/1280",
+          "before": "Women's collared knitted jumper, supplier photograph 6",
+          "after_proposal": "Close-up of ribbed edging on a knitted jumper",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        }
+      ],
+      "checklist": {
+        "composition": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "measurements": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "care": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "colours": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "supplier_variants": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "photo_matches": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "url": "https://elvarqo.uk/products/womens-v-neck-knitted-jumper",
+      "slug_unchanged": true,
+      "status": "REVIEW ONLY \u2014 not applied; product/photo identity confirmation required",
+      "before": {
+        "title_h1": "Women's V-Neck Knitted Jumper",
+        "description": "A plain V-neck knitted jumper with long sleeves. The supplied photographs show ribbed cuffs and hem.",
+        "seo_title": "Women's V-Neck Knitted Jumper | ELVARQO",
+        "seo_description": "A plain V-neck knitted jumper with long sleeves. The supplied photographs show ribbed cuffs and hem."
+      },
+      "after_proposal": {
+        "title_h1": "Women's V-Neck Knitted Jumper",
+        "description": "A plain V-neck knitted jumper with long sleeves and ribbed cuffs and hem.",
+        "seo_title": "Women's V-Neck Knitted Jumper | ELVARQO",
+        "seo_description": "A plain V-neck knitted jumper with long sleeves and ribbed cuffs and hem."
+      },
+      "images": [
+        {
+          "view": 1,
+          "media_id": "8365725f-7ffc-4cee-a102-c5276f1ce4c5",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/8365725f-7ffc-4cee-a102-c5276f1ce4c5/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 1",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 2,
+          "media_id": "d18a19f4-aa80-4597-837a-903ad0d006c9",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/d18a19f4-aa80-4597-837a-903ad0d006c9/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 2",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 3,
+          "media_id": "92c2f639-14af-4b61-a55d-d02b7ecb6b5a",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/92c2f639-14af-4b61-a55d-d02b7ecb6b5a/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 3",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 4,
+          "media_id": "a3220c13-d32e-4a6e-8981-b73b7b776c28",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/a3220c13-d32e-4a6e-8981-b73b7b776c28/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 4",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 5,
+          "media_id": "657c27aa-ef37-4e58-b0f7-84efbe4c24f3",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/657c27aa-ef37-4e58-b0f7-84efbe4c24f3/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 5",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 6,
+          "media_id": "5b7df518-658d-43e8-af5b-53089d703b52",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/5b7df518-658d-43e8-af5b-53089d703b52/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 6",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 7,
+          "media_id": "f98f27d7-aa6a-4fbc-b2f6-9976e5459bab",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/f98f27d7-aa6a-4fbc-b2f6-9976e5459bab/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 7",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 8,
+          "media_id": "397f2f96-8f5e-4b1f-bf88-0f26da39d643",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/397f2f96-8f5e-4b1f-bf88-0f26da39d643/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 8",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 9,
+          "media_id": "70d68583-273d-4a73-a5af-5d03c0c86953",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/70d68583-273d-4a73-a5af-5d03c0c86953/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 9",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 10,
+          "media_id": "b837e02a-b023-492b-a148-0875ec50452f",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/b837e02a-b023-492b-a148-0875ec50452f/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 10",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 11,
+          "media_id": "3ab2bae4-fe58-417c-a2dd-1a81edea869d",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/3ab2bae4-fe58-417c-a2dd-1a81edea869d/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 11",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 12,
+          "media_id": "a018968f-1828-4402-b3e3-82de1cd890d4",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/a018968f-1828-4402-b3e3-82de1cd890d4/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 12",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 13,
+          "media_id": "16be2337-46e5-4244-8886-d45aa9543c10",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/16be2337-46e5-4244-8886-d45aa9543c10/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 13",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 14,
+          "media_id": "3faf4977-ddb0-4f6f-8a41-856e07b555dd",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/3faf4977-ddb0-4f6f-8a41-856e07b555dd/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 14",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 15,
+          "media_id": "c4ecc1f4-492f-47da-be72-eb10d8ba484a",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/c4ecc1f4-492f-47da-be72-eb10d8ba484a/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 15",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 16,
+          "media_id": "d74eaa3b-2420-4d83-89d9-1806cd2ffc8c",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/d74eaa3b-2420-4d83-89d9-1806cd2ffc8c/1280",
+          "before": "Women's v-neck knitted jumper, supplier photograph 16",
+          "after_proposal": "Mirror photograph of a plain V-neck knitted jumper with ribbed trim",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        }
+      ],
+      "checklist": {
+        "composition": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "measurements": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "care": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "colours": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "supplier_variants": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "photo_matches": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "url": "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper",
+      "slug_unchanged": true,
+      "status": "REVIEW ONLY \u2014 not applied; product/photo identity confirmation required",
+      "before": {
+        "title_h1": "Women's Roll Neck Knitted Jumper",
+        "description": "A long-sleeved knitted jumper with a raised neckline. The supplied photographs show ribbed cuffs and hem.",
+        "seo_title": "Women's Roll Neck Knitted Jumper | ELVARQO",
+        "seo_description": "A long-sleeved knitted jumper with a raised neckline. The supplied photographs show ribbed cuffs and hem."
+      },
+      "after_proposal": {
+        "title_h1": "Women's Ribbed-Trim Knitted Jumper",
+        "description": "A long-sleeved knitted jumper with ribbed trim at the neckline, cuffs and hem.",
+        "seo_title": "Women's Ribbed-Trim Knitted Jumper | ELVARQO",
+        "seo_description": "A long-sleeved knitted jumper with ribbed trim at the neckline, cuffs and hem."
+      },
+      "images": [
+        {
+          "view": 1,
+          "media_id": "36530299-56a5-4199-bf7f-9d7699ac1c4e",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/36530299-56a5-4199-bf7f-9d7699ac1c4e/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 1",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 2,
+          "media_id": "d6f59855-6451-4a2a-98e8-efecc97a3a92",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/d6f59855-6451-4a2a-98e8-efecc97a3a92/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 2",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 3,
+          "media_id": "ba177236-5a8b-4fb7-8181-4db136deeb74",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/ba177236-5a8b-4fb7-8181-4db136deeb74/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 3",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 4,
+          "media_id": "f4046560-5835-4aac-8419-b002f32899fa",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/f4046560-5835-4aac-8419-b002f32899fa/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 4",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 5,
+          "media_id": "7de5ff74-c06e-44a7-afdc-b060d6ed62be",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/7de5ff74-c06e-44a7-afdc-b060d6ed62be/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 5",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 6,
+          "media_id": "70ae9e5e-5fa1-4e07-9d6a-9765e528dcd4",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/70ae9e5e-5fa1-4e07-9d6a-9765e528dcd4/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 6",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 7,
+          "media_id": "8a51546f-e97e-4764-bd4e-2899ce8954a1",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/8a51546f-e97e-4764-bd4e-2899ce8954a1/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 7",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 8,
+          "media_id": "16f47a4f-c4c8-4504-b30e-9448ea55002d",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/16f47a4f-c4c8-4504-b30e-9448ea55002d/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 8",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 9,
+          "media_id": "dfd0c2d6-a70d-4393-bbdc-429e88fd3d87",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/dfd0c2d6-a70d-4393-bbdc-429e88fd3d87/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 9",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 10,
+          "media_id": "2a7a5c8e-bec9-4924-914c-626cab281c5e",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/2a7a5c8e-bec9-4924-914c-626cab281c5e/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 10",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 11,
+          "media_id": "4e35c7ec-69aa-4867-852c-0182d4ab72f6",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/4e35c7ec-69aa-4867-852c-0182d4ab72f6/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 11",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 12,
+          "media_id": "908478dc-dc68-4a90-a2fd-3a7643906b94",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/908478dc-dc68-4a90-a2fd-3a7643906b94/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 12",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 13,
+          "media_id": "ace198d8-3b83-41fd-8e06-fe40474b49b2",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/ace198d8-3b83-41fd-8e06-fe40474b49b2/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 13",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 14,
+          "media_id": "6b49e7e1-2c74-4abb-9c1e-f66b3ca7c116",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/6b49e7e1-2c74-4abb-9c1e-f66b3ca7c116/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 14",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 15,
+          "media_id": "90d2715b-fed8-401c-80f2-0778e2ece3a3",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/90d2715b-fed8-401c-80f2-0778e2ece3a3/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 15",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 16,
+          "media_id": "31858cdb-2574-4153-b935-c760e0533a96",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/31858cdb-2574-4153-b935-c760e0533a96/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 16",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 17,
+          "media_id": "8c409c85-2e44-48a3-9c1b-579046405da2",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/8c409c85-2e44-48a3-9c1b-579046405da2/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 17",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 18,
+          "media_id": "cd9f9736-0326-4ea9-845b-484507eec896",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/cd9f9736-0326-4ea9-845b-484507eec896/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 18",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 19,
+          "media_id": "2da4e8aa-4bbc-4014-86c7-6f34402a9965",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/2da4e8aa-4bbc-4014-86c7-6f34402a9965/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 19",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        },
+        {
+          "view": 20,
+          "media_id": "0accc590-65d2-4836-8d5a-4d31b48b1f22",
+          "url": "https://api.elvarqo.uk/api/v1/catalogue/media/0accc590-65d2-4836-8d5a-4d31b48b1f22/1280",
+          "before": "Women's roll neck knitted jumper, supplier photograph 20",
+          "after_proposal": "Mirror photograph of a knitted jumper with ribbed trim at the neckline, cuffs and hem",
+          "status": "Unverified product/photo association; proposal only; no colour or supplier variant assigned"
+        }
+      ],
+      "checklist": {
+        "composition": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "measurements": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "care": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "colours": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "supplier_variants": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        },
+        "photo_matches": {
+          "verified": false,
+          "status": "missing evidence / review required"
+        }
+      }
+    }
+  ],
+  "collection": {
+    "id": 16,
+    "parent_id": 9,
+    "url": "https://elvarqo.uk/collections/womens-knitwear",
+    "before": {
+      "title_h1": "Knitwear",
+      "description": "Explore women\u2019s jumpers, cardigans and knitted layers.",
+      "seo_title": "Knitwear | ELVARQO",
+      "seo_description": "Explore the ELVARQO collection. Considered everyday wear, with garment details to help you choose.",
+      "category_image_alt": "Knitwear"
+    },
+    "after_ready_source": {
+      "title_h1": "Women's knitwear",
+      "description": "Explore textured and plain knitted jumpers, with V-neck, round-neck and collared styles. View each jumper for colours, sizes and price.",
+      "seo_title": "Women's Knitwear & Knitted Jumpers | ELVARQO",
+      "seo_description": "Explore women's knitwear, from textured V-neck jumpers to round-neck and collared styles. View each jumper for colours, sizes and price."
+    },
+    "category_image_alt_proposal": "Patterned knitted jumper",
+    "category_image_alt_status": "Review only; no category image record or mapping changed"
+  }
+}

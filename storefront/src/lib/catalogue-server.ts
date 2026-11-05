@@ -1,3 +1,4 @@
+import { productionIndexing } from './indexing-policy';
 import 'server-only';
 import { cache } from 'react';
 import {
@@ -112,6 +113,8 @@ export function filterParams(raw: Query, collection?: string) {
 export const siteOrigin = (
   process.env.NEXT_PUBLIC_SITE_URL || 'https://elvarqo.uk'
 ).replace(/\/$/, '');
-export const indexEnabled =
-  process.env.STOREFRONT_INDEXING === 'true' &&
-  process.env.NODE_ENV === 'production';
+export const indexEnabled = productionIndexing(
+  process.env.STOREFRONT_INDEXING,
+  process.env.NODE_ENV,
+  process.env.NEXT_PUBLIC_SITE_URL,
+);

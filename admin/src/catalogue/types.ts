@@ -14,6 +14,8 @@ export type Variant = {
   fit: string | null;
   care: string | null;
   available?: number;
+  stock_tracked?: boolean;
+  is_in_stock?: boolean;
 };
 export type Measurements = {
   size: string;
@@ -77,6 +79,8 @@ export type Location = {
   active: boolean;
 };
 export type InventoryRow = {
+  stock_tracked?: boolean;
+  is_in_stock?: boolean;
   id: number;
   product_id: number;
   title: string;

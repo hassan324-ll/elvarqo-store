@@ -1,0 +1,89 @@
+{
+  "products": [
+    {
+      "path": "/products/womens-textured-v-neck-knitted-jumper",
+      "status": 200,
+      "h1": 1,
+      "title": "Women's Textured V-Neck Knitted Jumper | ELVARQO",
+      "description": "A V-neck knitted jumper with long sleeves. The supplied photographs show vertical textured panels and ribbed cuffs and hem.",
+      "canonical": "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper",
+      "offers": 25,
+      "breadcrumb_items": 4
+    },
+    {
+      "path": "/products/womens-crew-neck-knitted-jumper",
+      "status": 200,
+      "h1": 1,
+      "title": "Women's Crew Neck Knitted Jumper | ELVARQO",
+      "description": "A knitted jumper with a round neckline and long sleeves. The selected photographs show ribbed edging at the neckline, cuffs and hem.",
+      "canonical": "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper",
+      "offers": 36,
+      "breadcrumb_items": 4
+    },
+    {
+      "path": "/products/womens-high-neck-knitted-jumper",
+      "status": 200,
+      "h1": 1,
+      "title": "Women's High Neck Knitted Jumper | ELVARQO",
+      "description": "A plain knitted jumper with long sleeves and a high neckline. Ribbed detailing is visible at the cuffs and hem in the supplied photographs.",
+      "canonical": "https://elvarqo.uk/products/womens-high-neck-knitted-jumper",
+      "offers": 20,
+      "breadcrumb_items": 4
+    },
+    {
+      "path": "/products/womens-collared-knitted-jumper",
+      "status": 200,
+      "h1": 1,
+      "title": "Women's Collared Knitted Jumper | ELVARQO",
+      "description": "A collared knitted jumper with long sleeves and an open neckline. The supplied photographs show ribbed cuffs and hem.",
+      "canonical": "https://elvarqo.uk/products/womens-collared-knitted-jumper",
+      "offers": 20,
+      "breadcrumb_items": 4
+    },
+    {
+      "path": "/products/womens-v-neck-knitted-jumper",
+      "status": 200,
+      "h1": 1,
+      "title": "Women's V-Neck Knitted Jumper | ELVARQO",
+      "description": "A plain V-neck knitted jumper with long sleeves. The supplied photographs show ribbed cuffs and hem.",
+      "canonical": "https://elvarqo.uk/products/womens-v-neck-knitted-jumper",
+      "offers": 55,
+      "breadcrumb_items": 4
+    },
+    {
+      "path": "/products/womens-roll-neck-knitted-jumper",
+      "status": 200,
+      "h1": 1,
+      "title": "Women's Roll Neck Knitted Jumper | ELVARQO",
+      "description": "A long-sleeved knitted jumper with a raised neckline. The supplied photographs show ribbed cuffs and hem.",
+      "canonical": "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper",
+      "offers": 60,
+      "breadcrumb_items": 4
+    }
+  ],
+  "offers_checked": 216,
+  "sitemap_urls": [
+    "https://elvarqo.uk/",
+    "https://elvarqo.uk/shop",
+    "https://elvarqo.uk/collections",
+    "https://elvarqo.uk/collections/women",
+    "https://elvarqo.uk/collections/womens-knitwear",
+    "https://elvarqo.uk/products/womens-textured-v-neck-knitted-jumper",
+    "https://elvarqo.uk/products/womens-crew-neck-knitted-jumper",
+    "https://elvarqo.uk/products/womens-high-neck-knitted-jumper",
+    "https://elvarqo.uk/products/womens-collared-knitted-jumper",
+    "https://elvarqo.uk/products/womens-v-neck-knitted-jumper",
+    "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper"
+  ],
+  "category_links": 6,
+  "unknown_route": 404,
+  "noindex_preserved": [
+    "empty category",
+    "delivery-returns",
+    "privacy",
+    "terms",
+    "contact",
+    "size-guide"
+  ],
+  "environment": "isolated local SQLite fixture, production Host header"
+}

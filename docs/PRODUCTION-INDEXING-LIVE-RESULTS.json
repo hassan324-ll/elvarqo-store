@@ -1,0 +1,295 @@
+{
+  "checked_utc": "2026-11-04T18:18:25Z",
+  "results": [
+    {
+      "url": "https://elvarqo.uk/",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [
+        "https://elvarqo.uk"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/?indexing_check=1793816295",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [
+        "https://elvarqo.uk"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://www.elvarqo.uk/",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [
+        "https://elvarqo.uk"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://www.elvarqo.uk/?indexing_check=1793816295",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [
+        "https://elvarqo.uk"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/shop",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [
+        "https://elvarqo.uk/shop"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/collections",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [
+        "https://elvarqo.uk/collections"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/collections/women",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [
+        "https://elvarqo.uk/collections/women"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [
+        "https://elvarqo.uk/products/womens-roll-neck-knitted-jumper"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/search",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, follow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [
+        "https://elvarqo.uk/shop"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/account",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/bag",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/checkout",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/development",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/design-system",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, nofollow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/privacy",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, follow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/shop?colour=Green",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, follow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [
+        "https://elvarqo.uk/shop"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/collections/women?colour=Green",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex, follow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [
+        "https://elvarqo.uk/collections/women"
+      ],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": "DYNAMIC",
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://elvarqo.uk/products/not-a-public-product-indexing-test",
+      "agent": "",
+      "status": 404,
+      "robots": [
+        "noindex",
+        "index, follow"
+      ],
+      "x_robots_tag": null,
+      "canonical": [],
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "cdn_cache": null,
+      "age": null,
+      "pass": true
+    },
+    {
+      "url": "https://admin.elvarqo.uk/",
+      "agent": "",
+      "status": 200,
+      "robots": [
+        "noindex,nofollow"
+      ],
+      "x_robots_tag": "noindex, nofollow",
+      "canonical": [],
+      "cache_control": null,
+      "cdn_cache": null,
+      "age": null,
+      "pass": true
+    }
+  ],
+  "robots_txt": "User-Agent: *\nAllow: /\nDisallow: /api\nDisallow: /admin\nDisallow: /account\nDisallow: /bag\nDisallow: /checkout\nDisallow: /pay-order\nDisallow: /returns\nDisallow: /track\nDisallow: /wishlist\nDisallow: /search\nDisallow: /development\nDisallow: /design-system\nDisallow: /the-edit\nDisallow: /our-story\nDisallow: /help\nDisallow: /delivery-returns\nDisallow: /size-guide\nDisallow: /contact\nDisallow: /privacy\nDisallow: /terms\nDisallow: /cookies\nDisallow: /accessibility\n\n"
+}

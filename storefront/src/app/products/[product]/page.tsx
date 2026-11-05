@@ -3,10 +3,14 @@ import { notFound, permanentRedirect } from 'next/navigation';
 import {
   product as loadProduct,
   indexEnabled,
+  siteOrigin,
   type Query,
 } from '../../../lib/catalogue-server';
 import ProductSelection from '../../../components/shop/product-selection';
 import Recovery from '../../../components/shop/recovery';
+import ProductStructuredData from '../../../components/shop/product-structured-data';
+import { productBreadcrumbs } from '../../../lib/product-structured-data';
+import { variantInStock } from '../../../lib/catalogue-types';
 type Props = {
   params: Promise<{ product: string }>;
   searchParams: Promise<Query>;
@@ -50,20 +54,23 @@ export default async function ProductPage({ params, searchParams }: Props) {
     typeof query.variant === 'string' && /^\d+$/.test(query.variant)
       ? Number(query.variant)
       : undefined;
+  const breadcrumbs = productBreadcrumbs(data.product, siteOrigin);
   return (
     <div className="store-section live-detail">
+      {indexEnabled && (
+        <ProductStructuredData product={data.product} origin={siteOrigin} />
+      )}
       <nav className="product-breadcrumbs" aria-label="Breadcrumb">
-        <Link href="/shop">Shop</Link>
-        <span>/</span>
-        {data.product.collections[0] && (
-          <>
-            <Link href={'/collections/' + data.product.collections[0].slug}>
-              {data.product.collections[0].title}
-            </Link>
-            <span>/</span>
-          </>
-        )}
-        <span>{data.product.title}</span>
+        {breadcrumbs.map((crumb, index) => (
+          <span key={crumb.item}>
+            {index > 0 && <span aria-hidden="true"> / </span>}
+            {index === breadcrumbs.length - 1 ? (
+              <span aria-current="page">{crumb.name}</span>
+            ) : (
+              <Link href={new URL(crumb.item).pathname}>{crumb.name}</Link>
+            )}
+          </span>
+        ))}
       </nav>
       <ProductSelection initial={data.product} initialVariant={selected} />
       <noscript>
@@ -87,7 +94,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
                 <td>{v.colour}</td>
                 <td>{v.size}</td>
                 <td>{(v.price_minor / 100).toFixed(2)}</td>
-                <td>{v.available}</td>
+                <td>{variantInStock(v) ? 'In stock' : 'Out of stock'}</td>
               </tr>
             ))}
           </tbody>
